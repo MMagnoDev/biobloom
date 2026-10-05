@@ -97,8 +97,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.bg-slide');
   let currentSlideIndex = 0;
   const totalSlides = slides.length;
-  const slideDuration = 4500; // 4.5 seconds per slide
+  const slideDuration = 4000; // 4 seconds per slide
   let slideTimer = null;
+
+  // Preload all slideshow images in background for instant switching
+  [
+    'assets/images/jardim1.png',
+    'assets/images/jardim2.png',
+    'assets/images/jardim3.png',
+    'assets/images/jardim4.png',
+    'assets/images/jardim5.png'
+  ].forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
 
   function updateSlide(index) {
     slides.forEach((s, i) => {
@@ -112,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, slideDuration);
   }
 
-  // Start Carousel
+  // Start Carousel immediately
   if (totalSlides > 0) {
     updateSlide(0);
   }
