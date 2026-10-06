@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BioBloom | Arquitetura Paisagística & Jardins de Biodiversidade</title>
+  <title>BioBloom | Jardins de Biodiversidade & Restauro Ecológico</title>
   <meta name="description"
-    content="Projetos de paisagismo regenerativo, jardins de biodiversidade e manutenção ecológica por BioBloom. Simbiose entre flora e fauna autóctones, ciência botânica e restauro natural.">
+    content="Projetos de jardins de biodiversidade, regeneração de solos e flora autóctone por BioBloom em Portugal. Restauro da natureza original e impacto socioambiental positivo.">
 
   <!-- Google Fonts: Manrope + Cormorant Garamond -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
   <!-- Preload First Slide for Instant Display -->
-  <link rel="preload" as="image" href="assets/images/jardim1.png">
+  <link rel="preload" as="image" href="assets/img/bg_slide_1.webp">
   <link rel="preload" as="image" href="logoheader.png">
 
   <!-- Favicon -->
@@ -30,24 +30,26 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <!-- Stylesheet (Cache-Busted) -->
-  <link rel="stylesheet" href="css/style.css?v=20261004_v8">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=20261006_v15">
 </head>
 
 <body>
 
-  <!-- BACKGROUND CAROUSEL SLIDESHOW -->
+  <!-- BACKGROUND CAROUSEL SLIDESHOW (IMAGENS WEBP DE ALTA QUALIDADE) -->
   <div class="bg-carousel-wrapper" id="bgCarousel">
-    <div class="bg-slide active" style="background-image: url('assets/images/jardim1.png');" data-index="0"
-      role="img" aria-label="Jardim de Biodiversidade ao Entardecer"></div>
-    <div class="bg-slide" style="background-image: url('assets/images/jardim2.png');" data-index="1" role="img"
-      aria-label="Biótopo e Lago Natural de Pedra"></div>
-    <div class="bg-slide" style="background-image: url('assets/images/jardim3.png');" data-index="2" role="img"
-      aria-label="Santuário Botânico com Espécies Polinizadoras"></div>
-    <div class="bg-slide" style="background-image: url('assets/images/jardim4.png');" data-index="3"
-      role="img" aria-label="Propriedade com Paisagismo Regenerativo"></div>
-    <div class="bg-slide" style="background-image: url('assets/images/jardim5.png');" data-index="4" role="img"
-      aria-label="Rooftop Urbano com Cobertura Viva"></div>
+    <div class="bg-slide active" style="background-image: url('assets/img/bg_slide_1.webp');" data-index="0"
+      role="img" aria-label="Jardim de Biodiversidade BioBloom"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_2.webp');" data-index="1" role="img"
+      aria-label="Paisagismo Regenerativo"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_3.webp');" data-index="2" role="img"
+      aria-label="Flora Autóctone e Polinizadores"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_4.webp');" data-index="3"
+      role="img" aria-label="Espaço de Biodiversidade Natural"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_5.webp');" data-index="4" role="img"
+      aria-label="Microhabitats e Natureza Preservada"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_6.webp');" data-index="5" role="img"
+      aria-label="Santuário Ecológico BioBloom"></div>
 
     <!-- Cinematic Vignette & Ambient Overlays -->
     <div class="vignette-overlay"></div>
@@ -64,7 +66,7 @@
       </div>
     </header>
 
-    <!-- HERO CONTENT & VERTICAL MENU (EXACT STYLE AS REFERENCE) -->
+    <!-- HERO CONTENT & VERTICAL MENU (ESTRUTURA CONFORME AS IMAGENS) -->
     <div class="hero-content-grid" id="heroContentGrid">
       <div class="hero-left-column">
 
@@ -85,36 +87,34 @@
           </p>
         </div>
 
-        <!-- Vertical Interactive Menu (Identical structure and elegance to reference) -->
+        <!-- Vertical Interactive Menu (4 BOTÕES OFICIAIS) -->
         <nav class="vertical-links-menu" aria-label="Menu Principal">
 
+          <!-- Botão 1: Sobre nós -->
           <button class="menu-item-btn" data-open-modal="aboutModal" id="btnMenuAbout">
-            <span class="item-icon-box"><i class="ph ph-flower-lotus"></i></span>
-            <span class="item-label">SOBRE A MARCA</span>
+            <span class="item-icon-box"><i class="ph ph-heart-straight"></i></span>
+            <span class="item-label">Sobre nós</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
+          <!-- Botão 2: O que é um Jardim de Biodiversidade -->
+          <button class="menu-item-btn" data-open-modal="biodiversityModal" id="btnMenuBiodiversity">
+            <span class="item-icon-box"><i class="ph ph-flower-lotus"></i></span>
+            <span class="item-label">O que é um Jardim de Biodiversidade</span>
+            <i class="ph ph-arrow-up-right item-arrow"></i>
+          </button>
+
+          <!-- Botão 3: Os nossos Serviços -->
           <button class="menu-item-btn" data-open-modal="servicesModal" id="btnMenuServices">
             <span class="item-icon-box"><i class="ph ph-plant"></i></span>
-            <span class="item-label">OS NOSSOS SERVIÇOS</span>
+            <span class="item-label">Os nossos Serviços</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
-          <button class="menu-item-btn" data-open-modal="docModal" id="btnMenuDoc">
-            <span class="item-icon-box"><i class="ph ph-film-slate"></i></span>
-            <span class="item-label">DOCUMENTÁRIO ECOLÓGICO</span>
-            <i class="ph ph-arrow-up-right item-arrow"></i>
-          </button>
-
-          <button class="menu-item-btn" data-open-modal="galleryModal" id="btnMenuGallery">
-            <span class="item-icon-box"><i class="ph ph-images"></i></span>
-            <span class="item-label">REPERTÓRIO & GALERIA</span>
-            <i class="ph ph-arrow-up-right item-arrow"></i>
-          </button>
-
+          <!-- Botão 4: Contactos rápidos -->
           <button class="menu-item-btn highlight-cta" data-open-modal="contactModal" id="btnMenuContact">
             <span class="item-icon-box"><i class="ph ph-chat-circle-dots"></i></span>
-            <span class="item-label">OS NOSSOS CONTACTOS</span>
+            <span class="item-label">Contactos rápidos</span>
             <i class="ph ph-arrow-right item-arrow"></i>
           </button>
 
@@ -123,16 +123,12 @@
         <!-- Social Links Footer -->
         <div class="hero-quick-footer">
           <div class="social-links-row">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill-link"
-              aria-label="Instagram">
+            <a href="https://instagram.com/biobloom_portugal" target="_blank" rel="noopener" class="social-pill-link"
+              aria-label="Instagram @biobloom_portugal" title="@biobloom_portugal">
               <i class="ph ph-instagram-logo"></i>
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill-link"
-              aria-label="YouTube">
-              <i class="ph ph-youtube-logo"></i>
-            </a>
-            <a href="https://wa.me/351912345678" target="_blank" rel="noopener" class="social-pill-link"
-              aria-label="WhatsApp">
+            <a href="https://wa.me/351935793704" target="_blank" rel="noopener" class="social-pill-link"
+              aria-label="WhatsApp +351935793704" title="+351 935 793 704">
               <i class="ph ph-whatsapp-logo"></i>
             </a>
           </div>
@@ -144,14 +140,15 @@
 
 
   <!-- ========================================================================= -->
-  <!-- MODALS & POP-UP STRUCTURE (CASCADING / NESTED AS REQUESTED BY CLIENT)    -->
-  <!-- =========================================================  <!-- MODAL 1: SOBRE A MARCA BIOBLOOM -->
+  <!-- MODAL 1: SOBRE NÓS (CONFORME IMAGEM 2)                                    -->
+  <!-- ========================================================================= -->
   <div class="custom-modal-backdrop" id="aboutModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
         <header class="modal-card-header">
           <div class="modal-heading-group">
-            <h2 class="modal-title">A Alma da Marca BioBloom</h2>
+            <span class="modal-kicker"><i class="ph ph-leaf"></i> Quem Somos & Propósito</span>
+            <h2 class="modal-title">Sobre nós</h2>
           </div>
           <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
@@ -160,76 +157,86 @@
 
         <div class="modal-card-body custom-scrollbar">
           <div class="about-grid-layout">
+            
+            <!-- Coluna de Imagem / Identidade Visual -->
             <div class="about-media-column">
               <div class="about-portrait-frame">
-                <img src="assets/images/maria_portrait.jpg" alt="Maria Echegoyen e a marca BioBloom"
-                  class="about-photo">
+                <img src="assets/img/sobre_nos.webp" alt="Jardim de Biodiversidade BioBloom" class="about-photo">
+                <div class="about-badge-tag">
+                  <strong>BioBloom Portugal</strong>
+                  <span>Sustentabilidade & Inclusão Social</span>
+                </div>
               </div>
               <div class="about-quote-box">
                 <i class="ph ph-quotes"></i>
-                <p>“BioBloom é a expressão máxima da simbiose viva: onde as flores nativas devolvem abrigo e alimento
-                  aos insetos locais, regenerando a essência da natureza.”</p>
+                <p>“Mais do que criar jardins, regeneramos ecossistemas vivos e promovemos a dignidade humana através da conexão diária com a natureza.”</p>
               </div>
             </div>
 
+            <!-- Coluna de Conteúdo Estruturado Conforme Imagem 2 -->
             <div class="about-text-column">
-              <h3 class="editorial-subheading">Repor a Natureza Original nos Espaços Verdes</h3>
-              <p class="editorial-body">
-                O nome <strong>BioBloom</strong> nasce da nossa profunda paixão por criar jardins de biodiversidade
-                autênticos, amigos da flora e da fauna local. A nossa grande missão é <strong>ajudar a repor a natureza
-                original de espaços verdes públicos ou que pertençam a empresas e corporações</strong>.
-              </p>
-              <p class="editorial-body">
-                Muitos relvados convencionais tornaram-se desertos verdes sem vida. A verdadeira transformação destes
-                jardins acontece através da <strong>plantação estratégica de espécies de flores locais</strong>,
-                cuidadosamente selecionadas para fornecer abrigo, néctar e alimento contínuo às várias espécies de
-                insetos e polinizadores autóctones.
-              </p>
-              <p class="editorial-body">
-                Em essência, <strong>BioBloom significa uma simbiose perfeita entre a fauna e a flora locais e
-                  nativas</strong>. Aqui, a <strong>ecologia é o principal foco dos jardins</strong> — sem pesticidas
-                químicos, com solos biologicamente ativos e com respeito rigoroso pelos ciclos naturais do ecossistema.
-              </p>
-
-              <div class="pillars-grid">
-                <div class="pillar-card">
-                  <div class="pillar-icon"><i class="ph ph-buildings"></i></div>
-                  <div class="pillar-content">
-                    <span class="pillar-title">Espaços Públicos & Empresariais</span>
-                    <p class="pillar-desc">Transformação de parques municipais, campus corporativos e sedes de empresas
-                      em marcos de sustentabilidade e responsabilidade ecológica.</p>
-                  </div>
+              
+              <!-- BLOCO 1: MISSÃO AMBIENTAL -->
+              <div class="mission-section-card">
+                <div class="mission-badge-header">
+                  <span class="mission-pill-icon"><i class="ph ph-globe-hemisphere-west"></i></span>
+                  <h3 class="mission-title">MISSÃO AMBIENTAL</h3>
                 </div>
-
-                <div class="pillar-card">
-                  <div class="pillar-icon"><i class="ph ph-bug"></i></div>
-                  <div class="pillar-content">
-                    <span class="pillar-title">Flores Locais & Abrigo para Insetos</span>
-                    <p class="pillar-desc">Plantação de espécies autóctones que garantem alimento essencial a abelhas
-                      solitárias, borboletas e fauna auxiliar benéfica.</p>
-                  </div>
-                </div>
-
-                <div class="pillar-card">
-                  <div class="pillar-icon"><i class="ph ph-heartbeat"></i></div>
-                  <div class="pillar-content">
-                    <span class="pillar-title">Foco 100% Ecológico & Simbiose Viva</span>
-                    <p class="pillar-desc">Equilíbrio biológico autossuficiente, eliminação total de químicos e gestão
-                      hídrica consciente para as gerações futuras.</p>
+                <div class="mission-text-content">
+                  <p class="editorial-body">
+                    A <strong>BioBloom</strong> nasceu da paixão dos seus fundadores pela natureza e do desejo de partilhar uma vasta experiência internacional em sustentabilidade.
+                  </p>
+                  <p class="editorial-body">
+                    Ao longo de sete anos, na Direção de Sustentabilidade de uma multinacional sueca em diversos países nos Balcãs, o nosso percurso passou pela implementação e monitorização de jardins de biodiversidade em espaços verdes adjacentes a infraestruturas comerciais. O impacto ambiental e social deste projeto foi tão extraordinário que decidimos trazer este conhecimento e conceito para todo o território português.
+                  </p>
+                  <p class="editorial-body">
+                    Em total alinhamento com o <strong>Plano Nacional de Recuperação da Natureza</strong>, disponibilizamos a empresas e municípios soluções para criar jardins de biodiversidade autóctone e endémica. O nosso objetivo é ajudar as organizações a valorizarem os seus espaços verdes, contribuindo ativamente para a proteção e recuperação da fauna e flora vulneráveis no nosso país.
+                  </p>
+                  
+                  <!-- Links Interativos para Serviços e Contactos -->
+                  <div class="editorial-cta-banner">
+                    <span class="cta-banner-text">Sabe mais na nossa página de <strong>Serviços</strong> ou vai à nossa página de <strong>Contactos</strong>!</span>
+                    <div class="cta-banner-buttons">
+                      <button class="inline-cta-btn btn-cta-services" data-switch-modal="servicesModal">
+                        <i class="ph ph-plant"></i>
+                        <span>Ver Serviços</span>
+                      </button>
+                      <button class="inline-cta-btn btn-cta-contact" data-switch-modal="contactModal">
+                        <i class="ph ph-chat-circle-dots"></i>
+                        <span>Contactos</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="modal-cta-row">
-                <button class="primary-action-btn" data-switch-modal="servicesModal">
-                  <span>Explorar os Nossos Serviços</span>
-                  <i class="ph ph-arrow-right"></i>
-                </button>
-                <button class="secondary-action-btn" data-switch-modal="contactModal">
-                  <span>Falar com a Nossa Equipa</span>
-                  <i class="ph ph-chat-circle"></i>
-                </button>
+              <!-- BLOCO 2: MISSÃO SOCIAL -->
+              <div class="mission-section-card">
+                <div class="mission-badge-header">
+                  <span class="mission-pill-icon social-icon"><i class="ph ph-users-three"></i></span>
+                  <h3 class="mission-title">MISSÃO SOCIAL</h3>
+                </div>
+                <div class="mission-text-content">
+                  <p class="editorial-body">
+                    A <strong>BioBloom</strong> assume uma forte componente social ao colaborar diretamente com organizações que apoiam pessoas com deficiência e em situação de vulnerabilidade no mercado de trabalho.
+                  </p>
+                  <p class="editorial-body">
+                    O nosso objetivo é garantir que estas pessoas tenham acesso a oportunidades profissionais com remunerações dignas, promovendo ativamente a sua autonomia financeira, valorização e inclusão social através do contacto com a natureza.
+                  </p>
+                  
+                  <!-- Call to action para Contactos -->
+                  <div class="editorial-cta-banner social-banner">
+                    <span class="cta-banner-text">Queres saber mais sobre o nosso impacto social? <strong>Contacta-nos aqui!</strong></span>
+                    <div class="cta-banner-buttons">
+                      <button class="inline-cta-btn btn-cta-contact" data-switch-modal="contactModal">
+                        <i class="ph ph-arrow-right"></i>
+                        <span>Falar com a Equipa</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -238,13 +245,16 @@
   </div>
 
 
-  <!-- MODAL 2: POP-UP PRINCIPAL DE SERVIÇOS (PRIMEIRO NÍVEL DE POP-UP) -->
-  <div class="custom-modal-backdrop" id="servicesModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <!-- ========================================================================= -->
+  <!-- MODAL 2: O QUE É UM JARDIM DE BIODIVERSIDADE (CONFORME IMAGEM 3)          -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop" id="biodiversityModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
         <header class="modal-card-header">
           <div class="modal-heading-group">
-            <h2 class="modal-title">Os Nossos Serviços</h2>
+            <span class="modal-kicker"><i class="ph ph-tree-evergreen"></i> Conservação & Ecologia Autóctone</span>
+            <h2 class="modal-title">O que é um Jardim de Biodiversidade</h2>
           </div>
           <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
@@ -252,116 +262,113 @@
         </header>
 
         <div class="modal-card-body custom-scrollbar">
-          <div class="services-cards-grid">
-
-            <!-- Service Card 1 -->
-            <article class="service-item-card" data-service-key="biodiversity">
-              <div class="service-card-image" style="background-image: url('assets/images/jardim1.png');">
+          <div class="biodiversity-grid-layout">
+            
+            <!-- Coluna de Imagens Florais Verticais (WebP de Alta Qualidade) -->
+            <div class="biodiversity-photos-column">
+              <div class="flora-strip-card">
+                <img src="assets/img/flora_1.webp" alt="Flora autóctone e polinizadores" class="flora-strip-img">
+                <span class="flora-strip-caption">Flora autóctone regional</span>
               </div>
-              <div class="service-card-info">
-                <div class="service-card-top">
-                  <span class="service-num">01</span>
-                  <h3 class="service-name">Jardins de Biodiversidade</h3>
-                </div>
-                <p class="service-summary">
-                  Restauro da natureza original em espaços públicos e campus empresariais através de ecossistemas vivos
-                  e equilibrados.
+              <div class="flora-strip-card">
+                <img src="assets/img/flora_2.webp" alt="Microhabitats e abrigo natural" class="flora-strip-img">
+                <span class="flora-strip-caption">Microhabitats de fauna auxiliar</span>
+              </div>
+              <div class="flora-strip-card">
+                <img src="assets/img/flora_3.webp" alt="Prados floridos sem rega" class="flora-strip-img">
+                <span class="flora-strip-caption">Mosaicos vivos sem rega artificial</span>
+              </div>
+            </div>
+
+            <!-- Coluna de Conteúdo Integral Conforme Imagem 3 -->
+            <div class="biodiversity-text-column">
+
+              <!-- Diagnóstico e Estatísticas de Portugal -->
+              <div class="bio-intro-box">
+                <p class="editorial-body">
+                  Em Portugal, <strong>381 espécies de plantas autóctones estão ameaçadas de extinção</strong>, das quais <strong>53 são endémicas</strong> do nosso país.
                 </p>
-                <div class="service-highlights-pills">
-                  <span><i class="ph ph-check-circle"></i> Natureza Original</span>
-                  <span><i class="ph ph-check-circle"></i> Simbiose Fauna-Flora</span>
-                  <span><i class="ph ph-check-circle"></i> Impacto ESG</span>
-                </div>
-                <div class="service-footer-action">
-                  <button class="btn-open-service-detail" data-open-detail="biodiversity">
-                    <span>Ver Detalhes & Preços</span>
-                    <i class="ph ph-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Service Card 2 -->
-            <article class="service-item-card" data-service-key="wildflowers">
-              <div class="service-card-image" style="background-image: url('assets/images/jardim2.png');">
-              </div>
-              <div class="service-card-info">
-                <div class="service-card-top">
-                  <span class="service-num">02</span>
-                  <h3 class="service-name">Plantação de Flores Locais & Refúgios</h3>
-                </div>
-                <p class="service-summary">
-                  Introdução de espécies florais autóctones que fornecem alimento contínuo e abrigo indispensável às
-                  várias espécies de insetos locais.
+                <p class="editorial-body">
+                  Infelizmente, cerca de <strong>19 plantas já foram dadas como extintas</strong> e já não fazem parte desta contagem. No mundo dos invertebrados — altamente dependente da flora local —, estima-se que <strong>mais de 200 espécies de insectos, aranhas, crustáceos e moluscos também estejam ameaçadas</strong>.
                 </p>
-                <div class="service-highlights-pills">
-                  <span><i class="ph ph-check-circle"></i> Flores Autóctones</span>
-                  <span><i class="ph ph-check-circle"></i> Abrigo de Insetos</span>
-                  <span><i class="ph ph-check-circle"></i> Polinização Ativa</span>
-                </div>
-                <div class="service-footer-action">
-                  <button class="btn-open-service-detail" data-open-detail="wildflowers">
-                    <span>Ver Detalhes & Preços</span>
-                    <i class="ph ph-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Service Card 3 -->
-            <article class="service-item-card" data-service-key="maintenance">
-              <div class="service-card-image" style="background-image: url('assets/images/jardim3.png');">
-              </div>
-              <div class="service-card-info">
-                <div class="service-card-top">
-                  <span class="service-num">03</span>
-                  <h3 class="service-name">Manutenção Ecológica Especializada</h3>
-                </div>
-                <p class="service-summary">
-                  Gestão sustentável com zero pesticidas químicos, salvaguardando os insetos benéficos, a microfauna do
-                  solo e o ciclo biológico natural.
+                <p class="editorial-body">
+                  Os fatores de maior impacto negativo nestas populações incluem a <strong>agricultura intensiva</strong>, o <strong>uso de herbicidas e pesticidas</strong>, a <strong>pressão urbanística</strong>, os <strong>incêndios</strong> e as <strong>espécies invasoras</strong>.
                 </p>
-                <div class="service-highlights-pills">
-                  <span><i class="ph ph-check-circle"></i> Zero Químicos</span>
-                  <span><i class="ph ph-check-circle"></i> Proteção à Fauna</span>
-                  <span><i class="ph ph-check-circle"></i> Solo Vivo</span>
-                </div>
-                <div class="service-footer-action">
-                  <button class="btn-open-service-detail" data-open-detail="maintenance">
-                    <span>Ver Detalhes & Preços</span>
-                    <i class="ph ph-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Service Card 4 -->
-            <article class="service-item-card" data-service-key="corporate">
-              <div class="service-card-image" style="background-image: url('assets/images/jardim4.png');">
-              </div>
-              <div class="service-card-info">
-                <div class="service-card-top">
-                  <span class="service-num">04</span>
-                  <h3 class="service-name">Regeneração para Empresas & Municípios</h3>
-                </div>
-                <p class="service-summary">
-                  Conversão de relvados tradicionais de alto consumo em corredores ecológicos autossustentáveis com
-                  forte identidade biológica.
+                <p class="editorial-body highlight-paragraph">
+                  O <strong>Jardim de Biodiversidade BioBloom</strong> tem como objetivo principal a restauração de habitats degradados por estas ameaças. Além disso, transformamos jardins actuais não sustentáveis (como relvados ou espaços com plantas exóticas), repondo as características e os elementos necessários para proteger a flora e a fauna local.
                 </p>
-                <div class="service-highlights-pills">
-                  <span><i class="ph ph-check-circle"></i> Poupança Hídrica 70%</span>
-                  <span><i class="ph ph-check-circle"></i> Certificação Verde</span>
-                  <span><i class="ph ph-check-circle"></i> Corredores Ecológicos</span>
-                </div>
-                <div class="service-footer-action">
-                  <button class="btn-open-service-detail" data-open-detail="corporate">
-                    <span>Ver Detalhes & Preços</span>
-                    <i class="ph ph-arrow-right"></i>
-                  </button>
-                </div>
               </div>
-            </article>
 
+              <!-- O que fazemos exatamente? -->
+              <div class="bio-actions-card">
+                <h3 class="bio-actions-heading">
+                  <i class="ph ph-sparkle"></i> O que fazemos exatamente?
+                </h3>
+                
+                <ul class="bio-checklist">
+                  <li class="bio-checklist-item">
+                    <div class="check-icon"><i class="ph ph-check-circle"></i></div>
+                    <div class="check-content">
+                      <strong>Recuperação de solos:</strong>
+                      <span>Regeneração e melhoria de solos degradados pela acção humana.</span>
+                    </div>
+                  </li>
+
+                  <li class="bio-checklist-item">
+                    <div class="check-icon"><i class="ph ph-check-circle"></i></div>
+                    <div class="check-content">
+                      <strong>Plantação e sementeira:</strong>
+                      <span>Introdução de árvores, sebes e flores autóctones e endémicas adaptadas à região. Estas plantas <strong>dispensam rega artificial</strong> e fornecem alimento e refúgio a invertebrados, que servem de base alimentar para aves e répteis locais.</span>
+                    </div>
+                  </li>
+
+                  <li class="bio-checklist-item">
+                    <div class="check-icon"><i class="ph ph-check-circle"></i></div>
+                    <div class="check-content">
+                      <strong>Zonas de reprodução:</strong>
+                      <span>Criação de microhabitats seguros para a reprodução de invertebrados, répteis e aves.</span>
+                    </div>
+                  </li>
+
+                  <li class="bio-checklist-item">
+                    <div class="check-icon"><i class="ph ph-check-circle"></i></div>
+                    <div class="check-content">
+                      <strong>Prevenção de espécies invasoras:</strong>
+                      <span>Prevenção e combate táctico de espécies exóticas invasoras.</span>
+                    </div>
+                  </li>
+
+                  <li class="bio-checklist-item">
+                    <div class="check-icon"><i class="ph ph-check-circle"></i></div>
+                    <div class="check-content">
+                      <strong>Monitorização e documentação dos resultados:</strong>
+                      <span>Documentação e avaliação contínua do impacto dos jardins implementados na biodiversidade local.</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Destaque Conclusivo Mosaicos de Biodiversidade -->
+              <div class="bio-conclusion-callout">
+                <i class="ph ph-shield-check"></i>
+                <p>
+                  “Só com a <strong>criação de mosaicos de Biodiversidade</strong> espalhados por todo o País, em zonas urbanas e rurais, será possível proteger a nossa fauna e flora autóctone e endémica, tão crucial à nossa existência.”
+                </p>
+              </div>
+
+              <!-- Botões de Ação -->
+              <div class="modal-cta-row">
+                <button class="primary-action-btn" data-switch-modal="servicesModal">
+                  <span>Conhecer os Nossos Serviços</span>
+                  <i class="ph ph-arrow-right"></i>
+                </button>
+                <button class="secondary-action-btn" data-switch-modal="contactModal">
+                  <span>Contactar a Nossa Equipa</span>
+                  <i class="ph ph-chat-circle"></i>
+                </button>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -369,29 +376,147 @@
   </div>
 
 
-  <!-- MODAL 3: SUB-POP-UP DETALHADO DO SERVIÇO (SEGUNDO NÍVEL DE POP-UP EM CASCATA) -->
-  <!-- Conforme especificação: ao fechar o pop-up interno, retorna imediatamente ao pop-up anterior -->
-  <div class="custom-modal-backdrop nested-level-2" id="serviceDetailModal" role="dialog" aria-modal="true"
-    aria-hidden="true">
-    <div class="custom-modal-dialog size-medium">
+  <!-- ========================================================================= -->
+  <!-- MODAL 3: OS NOSSOS SERVIÇOS (CONFORME IMAGEM 4)                           -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop" id="servicesModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
+        <header class="modal-card-header">
+          <div class="modal-heading-group">
+            <span class="modal-kicker"><i class="ph ph-squares-four"></i> Portfólio de Soluções</span>
+            <h2 class="modal-title">Os nossos Serviços</h2>
+            <p class="modal-subtitle">Soluções completas de restauro botânico, jardins autóctones e experiências biofílicas para organizações.</p>
+          </div>
+          <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
+            <i class="ph ph-x"></i>
+          </button>
+        </header>
 
-        <!-- Navigation bar inside nested popup -->
+        <div class="modal-card-body custom-scrollbar">
+          
+          <!-- Grid com os 2 Serviços Exatos Mostrados na Imagem 4 -->
+          <div class="services-duo-grid">
+
+            <!-- Serviço 1: Os nossos jardins (Conforme Imagem 4) -->
+            <article class="service-duo-card" data-open-submodal="ourGardensModal" id="cardServiceGardens">
+              <div class="service-duo-img-box" style="background-image: url('assets/img/servico_jardins.webp');">
+                <div class="service-duo-tag">
+                  <i class="ph ph-leaf"></i> Restauro Botânico
+                </div>
+              </div>
+              <div class="service-duo-content">
+                <h3 class="service-duo-title">Os nossos jardins</h3>
+                <p class="service-duo-desc">
+                  Regeneração natural de solos e propagação de espécies autóctones e endémicas. Jardins sustentáveis que não requerem rega artificial.
+                </p>
+                <div class="service-duo-footer">
+                  <button class="btn-service-action btn-service-highlight" data-open-submodal="ourGardensModal">
+                    <span>Os nossos jardins</span>
+                    <i class="ph ph-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Serviço 2: Reuniões e Actividades na Natureza (Conforme Imagem 4) -->
+            <article class="service-duo-card" data-open-submodal="meetingsNatureModal" id="cardServiceMeetings">
+              <div class="service-duo-img-box" style="background-image: url('assets/img/reunioes_natureza.webp');">
+                <div class="service-duo-tag">
+                  <i class="ph ph-users"></i> Conexão & ESG
+                </div>
+              </div>
+              <div class="service-duo-content">
+                <h3 class="service-duo-title">Reuniões e Actividades na Natureza</h3>
+                <p class="service-duo-desc">
+                  Encontros corporativos ao ar livre, dinâmicas de conexão biofílica, workshops de sementeira e voluntariado ecológico com impacto positivo.
+                </p>
+                <div class="service-duo-footer">
+                  <button class="btn-service-action btn-service-standard" data-open-submodal="meetingsNatureModal">
+                    <span>Reuniões e Actividades na Natureza</span>
+                    <i class="ph ph-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 4 (SUB-POPUP): OS NOSSOS JARDINS (CONFORME IMAGEM 5)                -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop nested-level-2" id="ourGardensModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="custom-modal-dialog size-large">
+      <div class="modal-glass-card">
+        
+        <!-- Header com botão de voltar aos serviços conforme imagem de cascata -->
         <header class="modal-card-header nested-header">
           <div class="nested-back-btn-wrapper">
-            <button class="nested-back-btn" id="btnBackToServices" title="Voltar à lista de serviços"
-              aria-label="Voltar à lista de serviços">
+            <button class="nested-back-btn" id="btnBackToServicesFromGardens" title="Voltar aos Serviços" aria-label="Voltar aos Serviços">
               <i class="ph ph-arrow-left"></i>
               <span>Voltar aos Serviços</span>
             </button>
+          </div>
+          <div class="modal-heading-group">
+            <h2 class="modal-title">Os nossos jardins</h2>
           </div>
           <button class="modal-close-btn" data-close-nested-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
           </button>
         </header>
 
-        <div class="modal-card-body custom-scrollbar" id="serviceDetailDynamicContent">
-          <!-- Populated dynamically via JS based on selected service -->
+        <div class="modal-card-body custom-scrollbar">
+          <div class="gardens-detail-layout">
+            
+            <!-- Coluna Esquerda: Mosaico Oficial GridArt Fornecido na Imagem 5 -->
+            <div class="mosaic-photo-column">
+              <div class="mosaic-single-frame">
+                <img src="assets/img/mosaico_jardins.webp" alt="Mosaico de Flora e Biodiversidade BioBloom" class="mosaic-full-img">
+              </div>
+              <span class="mosaic-caption-tag"><i class="ph ph-sparkle"></i> Variedade de flora autóctone e microhabitats</span>
+            </div>
+
+            <!-- Coluna Direita: Conteúdo Literal Conforme Imagem 5 -->
+            <div class="gardens-detail-content">
+              
+              <p class="editorial-body lead-editorial">
+                Promovemos a <strong>regeneração natural dos solos</strong> e a <strong>propagação da flora autóctone e endémica</strong>, através dos nossos Jardins Biobloom.
+              </p>
+
+              <p class="editorial-body">
+                Estes ecossistemas servem de refúgio e alimento a centenas de insetos nativos, essenciais para a sobrevivência de aves e répteis locais. Ao adotar este projeto, <strong>empresas e municípios alinham-se com o Plano Nacional de Regeneração da Natureza</strong> e protegem espécies locais em perigo.
+              </p>
+
+              <!-- Destaque Conforme Imagem 5: Sem rega e 3 anos de manutenção gratuita -->
+              <div class="benefit-highlight-box">
+                <div class="benefit-icon-ring">
+                  <i class="ph ph-drop-slash"></i>
+                </div>
+                <div class="benefit-highlight-text">
+                  <span class="benefit-tag">Diferencial BioBloom</span>
+                  <p class="benefit-bold-statement">
+                    Uma solução sustentável e eficiente: os jardins não requerem rega e oferecemos <strong>3 anos de manutenção e monitorização gratuita</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Botão de Ação Direta para Pedido de Proposta -->
+              <div class="detail-action-buttons">
+                <button class="primary-action-btn full-width" id="btnRequestGardensQuote">
+                  <span>Pedir Proposta para os Nossos Jardins</span>
+                  <i class="ph ph-paper-plane-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -399,194 +524,96 @@
   </div>
 
 
-  <!-- MODAL 4: DOCUMENTÁRIO ECOLÓGICO CRIADO COM IA -->
-  <div class="custom-modal-backdrop" id="docModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <!-- ========================================================================= -->
+  <!-- MODAL 5 (SUB-POPUP): REUNIÕES E ACTIVIDADES NA NATUREZA                   -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop nested-level-2" id="meetingsNatureModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
-        <header class="modal-card-header">
-          <div class="modal-heading-group">
-            <h2 class="modal-title">Documentário: O Renascer da Biodiversidade</h2>
+        
+        <header class="modal-card-header nested-header">
+          <div class="nested-back-btn-wrapper">
+            <button class="nested-back-btn" id="btnBackToServicesFromMeetings" title="Voltar aos Serviços" aria-label="Voltar aos Serviços">
+              <i class="ph ph-arrow-left"></i>
+              <span>Voltar aos Serviços</span>
+            </button>
           </div>
-          <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
+          <div class="modal-heading-group">
+            <h2 class="modal-title">Reuniões e Actividades na Natureza</h2>
+          </div>
+          <button class="modal-close-btn" data-close-nested-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
           </button>
         </header>
 
         <div class="modal-card-body custom-scrollbar">
-          <div class="documentary-layout">
-
-            <!-- Video Player Interactive Sandbox -->
-            <div class="video-player-container">
-              <div class="video-frame-preview" id="videoFrameWrap">
-                <img src="assets/images/jardim5.png" alt="Frame do documentário" class="doc-cover-art">
-                <div class="video-play-overlay" id="docPlayBtn">
-                  <div class="play-pulse-ring"></div>
-                  <button class="play-circle-btn" aria-label="Reproduzir Documentário">
-                    <i class="ph-fill ph-play"></i>
-                  </button>
-                  <span class="play-label">Assistir Teaser Oficial (4K)</span>
-                </div>
-
-                <!-- Simulated Cinematic Ambient Player -->
-                <div class="cinematic-player-screen" id="cinematicScreen" style="display: none;">
-                  <div class="player-ambient-glow"></div>
-                  <div class="cinematic-scenery-motion">
-                    <img src="assets/images/jardim2.png" alt="Cena em movimento" class="cinematic-motion-img">
-                  </div>
-                  <div class="player-hud-controls">
-                    <button class="hud-btn" id="hudPauseBtn"><i class="ph-fill ph-pause"></i></button>
-                    <div class="hud-time-track">
-                      <div class="hud-progress-fill"></div>
-                    </div>
-                    <span class="hud-time-display">01:24 / 04:15</span>
-                    <button class="hud-btn" id="hudSoundBtn"><i class="ph-bold ph-speaker-high"></i></button>
-                  </div>
+          <div class="gardens-detail-layout">
+            
+            <!-- Coluna de Imagem (WhatsApp Image fornecida pelo usuário) -->
+            <div class="about-media-column">
+              <div class="about-portrait-frame" style="height: 380px;">
+                <img src="assets/img/reunioes_natureza.webp" alt="Reuniões e Atividades na Natureza" class="about-photo" style="height: 100%;">
+                <div class="about-badge-tag">
+                  <strong>Espaços Regenerativos</strong>
+                  <span>Reuniões Corporativas & Bem-Estar</span>
                 </div>
               </div>
             </div>
 
-            <!-- Documentary Details & AI Synopsis -->
-            <div class="doc-meta-grid">
-              <div class="doc-info-card">
-                <h3 class="doc-info-title"><i class="ph ph-sparkle"></i> Síntese da Obra</h3>
-                <p class="doc-text">
-                  Desenvolvido com recurso a ferramentas generativas de inteligência artificial de última geração e
-                  curadoria científica de Maria Echegoyen, este documentário ilustra visualmente a transformação radical
-                  de solos degradados em santuários vivos de flora nativa.
-                </p>
-                <div class="doc-tags-list">
-                  <span class="doc-tag"><i class="ph ph-clock"></i> Duração: 4m 15s</span>
-                  <span class="doc-tag"><i class="ph ph-video-camera"></i> Resolução: 4K UHD</span>
-                  <span class="doc-tag"><i class="ph ph-brain"></i> IA & Modelagem Botânica</span>
-                  <span class="doc-tag"><i class="ph ph-translate"></i> Legendado (PT / EN)</span>
+            <!-- Conteúdo Literal Conforme Imagem do Usuário -->
+            <div class="gardens-detail-content">
+              <p class="editorial-body lead-editorial" style="font-weight: 700; color: #ffffff;">
+                Apesar de Portugal ser um território riquíssimo em biodiversidade e espécies endémicas, grande parte deste património natural ainda é desconhecida pela sociedade.
+              </p>
+
+              <p class="editorial-body">
+                A BioBloom tem como missão partilhar este património com empresas e escolas que queiram enriquecer o conhecimento dos seus colaboradores e alunos. Para isso, promovemos visitas organizadas a locais de alto valor ecológico, bem como <strong>visitas guiadas às nossas instalações, situadas no Vale das Barrocas, em A-do-Baço, Concelho de Arruda dos Vinhos</strong>.
+              </p>
+
+              <p class="editorial-body">
+                Além das atividades ambientais, o nosso espaço dispõe de uma <strong>sala de reuniões inserida num ecossistema preservado</strong> — a solução ideal para reuniões corporativas focadas no bem-estar e na desconexão urbana.
+              </p>
+
+              <div class="benefit-highlight-box" style="margin-top: 10px; margin-bottom: 12px; background: rgba(30, 46, 36, 0.85); border-color: #829668;">
+                <div class="benefit-icon-ring" style="border-color: #829668; color: #a4be85;">
+                  <i class="ph ph-chat-circle-dots"></i>
+                </div>
+                <div class="benefit-highlight-text">
+                  <span class="benefit-tag" style="color: #a4be85;">Reservas & Visitas</span>
+                  <p class="benefit-bold-statement">
+                    <button class="inline-action-link" id="linkFalaConnoscoMeetings" data-switch-modal="contactModal">Fala connosco</button> para agendar a atividade da tua organização ou reservar o espaço.
+                  </p>
                 </div>
               </div>
 
-              <div class="doc-action-card">
-                <h3 class="doc-info-title"><i class="ph ph-share-network"></i> Acesso Privado</h3>
-                <p class="doc-text">
-                  Deseja receber a ligação privada completa e os estudos botânicos de apoio?
-                </p>
-                <button class="primary-action-btn full-width" data-switch-modal="contactModal">
-                  <span>Solicitar Acesso Completo ao Documentário</span>
-                  <i class="ph ph-paper-plane-tilt"></i>
+              <!-- Botão de Ação Direta -->
+              <div class="detail-action-buttons">
+                <button class="primary-action-btn full-width" id="btnRequestMeetingsQuote" style="background: linear-gradient(135deg, #798f60 0%, #5d7049 100%);">
+                  <span>Fala connosco / Agendar Espaço</span>
+                  <i class="ph ph-calendar-plus"></i>
                 </button>
               </div>
             </div>
 
           </div>
         </div>
+
       </div>
     </div>
   </div>
 
 
-  <!-- MODAL 5: REPERTÓRIO & GALERIA DE FOTOS -->
-  <div class="custom-modal-backdrop" id="galleryModal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="custom-modal-dialog size-large">
-      <div class="modal-glass-card">
-        <header class="modal-card-header">
-          <div class="modal-heading-group">
-            <h2 class="modal-title">Repertório Fotográfico de Jardins</h2>
-          </div>
-          <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
-            <i class="ph ph-x"></i>
-          </button>
-        </header>
-
-        <div class="modal-card-body custom-scrollbar">
-
-          <!-- Gallery Filters -->
-          <div class="gallery-filters-bar">
-            <button class="filter-pill-btn active" data-filter="all">Todos os Projetos</button>
-            <button class="filter-pill-btn" data-filter="biodiversity">Jardins de Biodiversidade</button>
-            <button class="filter-pill-btn" data-filter="residence">Residências & Herdades</button>
-            <button class="filter-pill-btn" data-filter="rooftop">Rooftops Urbanos</button>
-          </div>
-
-          <!-- Gallery Masonry / Grid -->
-          <div class="portfolio-grid-layout" id="portfolioGalleryGrid">
-
-            <div class="gallery-card" data-category="biodiversity" data-lightbox="assets/images/jardim1.png">
-              <div class="gallery-img-wrap">
-                <img src="assets/images/jardim1.png" alt="Residência Vale dos Pinheiros" loading="lazy">
-                <div class="gallery-hover-overlay">
-                  <i class="ph ph-magnifying-glass-plus"></i>
-                  <span class="g-title">Residência Vale dos Pinheiros</span>
-                  <span class="g-loc">Sintra &middot; 2.400 m²</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery-card" data-category="residence" data-lightbox="assets/images/jardim2.png">
-              <div class="gallery-img-wrap">
-                <img src="assets/images/jardim2.png" alt="Biótopo e Lago Natural" loading="lazy">
-                <div class="gallery-hover-overlay">
-                  <i class="ph ph-magnifying-glass-plus"></i>
-                  <span class="g-title">Biótopo & Piscina Biológica</span>
-                  <span class="g-loc">Cascais &middot; 1.850 m²</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery-card" data-category="biodiversity" data-lightbox="assets/images/jardim3.png">
-              <div class="gallery-img-wrap">
-                <img src="assets/images/jardim3.png" alt="Santuário de Polinizadores" loading="lazy">
-                <div class="gallery-hover-overlay">
-                  <i class="ph ph-magnifying-glass-plus"></i>
-                  <span class="g-title">Santuário de Polinizadores</span>
-                  <span class="g-loc">Azeitão &middot; 950 m²</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery-card" data-category="residence" data-lightbox="assets/images/jardim4.png">
-              <div class="gallery-img-wrap">
-                <img src="assets/images/jardim4.png" alt="Herdade do Sobreiro Vivo" loading="lazy">
-                <div class="gallery-hover-overlay">
-                  <i class="ph ph-magnifying-glass-plus"></i>
-                  <span class="g-title">Herdade do Sobreiro Vivo</span>
-                  <span class="g-loc">Alentejo &middot; 15.000 m²</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery-card" data-category="rooftop" data-lightbox="assets/images/jardim5.png">
-              <div class="gallery-img-wrap">
-                <img src="assets/images/jardim5.png" alt="Rooftop Cobertura Viva" loading="lazy">
-                <div class="gallery-hover-overlay">
-                  <i class="ph ph-magnifying-glass-plus"></i>
-                  <span class="g-title">Rooftop Sky Sanctuary</span>
-                  <span class="g-loc">Lisboa (Avenida da Liberdade) &middot; 380 m²</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery-card" data-category="biodiversity" data-lightbox="assets/images/jardim1.png">
-              <div class="gallery-img-wrap">
-                <img src="assets/images/jardim1.png" alt="Parque Empresarial de Polinizadores" loading="lazy">
-                <div class="gallery-hover-overlay">
-                  <i class="ph ph-magnifying-glass-plus"></i>
-                  <span class="g-title">Campus Empresarial Regenerativo</span>
-                  <span class="g-loc">Porto &middot; 4.200 m²</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- MODAL 6: OS NOSSOS CONTACTOS & AGENDAMENTO -->
+  <!-- ========================================================================= -->
+  <!-- MODAL 6: CONTACTOS RÁPIDOS (CONFORME IMAGEM 2 OFICIAL)                   -->
+  <!-- ========================================================================= -->
   <div class="custom-modal-backdrop" id="contactModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
         <header class="modal-card-header">
           <div class="modal-heading-group">
-            <h2 class="modal-title">Os Nossos Contactos</h2>
+            <span class="modal-kicker"><i class="ph ph-chat-circle-dots"></i> Atendimento Direto</span>
+            <h2 class="modal-title">Contactos rápidos</h2>
+            <p class="modal-subtitle">Fale diretamente connosco por WhatsApp, Instagram ou solicite uma proposta à medida para o seu espaço.</p>
           </div>
           <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
@@ -594,53 +621,52 @@
         </header>
 
         <div class="modal-card-body custom-scrollbar">
-          <div class="contact-grid-layout">
+          <div class="contact-modal-wrapper">
 
-            <!-- Contact Direct Info -->
-            <div class="contact-info-column">
-              <div class="contact-direct-card">
-                <h3 class="contact-card-title">Ateliê & Atendimento</h3>
-                <p class="contact-card-desc">Atendimento presencial por marcação ou consultoria técnica para todo o
-                  território nacional.</p>
+            <!-- Card Oficial de Contactos Conforme Imagem 2 do Usuário -->
+            <div class="contact-card-banner">
+              <!-- Lado Esquerdo: Card Quadrado com Logo e Fundo Verde Sage -->
+              <div class="contact-brand-square">
+                <img src="logo.png" alt="BioBloom Biodiversity Gardens" class="contact-brand-logo-img">
+              </div>
 
-                <div class="contact-channels-list">
-                  <a href="https://wa.me/351912345678" target="_blank" rel="noopener"
-                    class="contact-channel-item whatsapp">
-                    <div class="channel-icon"><i class="ph-fill ph-whatsapp-logo"></i></div>
-                    <div class="channel-info">
-                      <span class="channel-name">WhatsApp Direto</span>
-                      <span class="channel-val">+351 912 345 678</span>
-                    </div>
-                    <i class="ph ph-arrow-up-right channel-arrow"></i>
-                  </a>
+              <!-- Lado Direito: Os 3 Canais de Comunicação com Espaçamento Perfeito -->
+              <div class="contact-official-channels">
+                
+                <!-- WhatsApp Oficial -->
+                <a href="https://wa.me/351935793704" target="_blank" rel="noopener" class="official-channel-row whatsapp-row">
+                  <span class="official-channel-icon whatsapp-icon">
+                    <i class="ph-fill ph-whatsapp-logo"></i>
+                  </span>
+                  <span class="official-channel-value">+351935793704</span>
+                </a>
 
-                  <a href="mailto:contacto@biobloom.pt" class="contact-channel-item email">
-                    <div class="channel-icon"><i class="ph ph-envelope-simple"></i></div>
-                    <div class="channel-info">
-                      <span class="channel-name">Correio Eletrónico</span>
-                      <span class="channel-val">contacto@biobloom.pt</span>
-                    </div>
-                    <i class="ph ph-arrow-up-right channel-arrow"></i>
-                  </a>
-
-                  <div class="contact-channel-item location">
-                    <div class="channel-icon"><i class="ph ph-map-pin"></i></div>
-                    <div class="channel-info">
-                      <span class="channel-name">Estúdio Principal</span>
-                      <span class="channel-val">Avenida das Flores &middot; Lisboa, Portugal</span>
-                    </div>
-                  </div>
+                <!-- Email Oficial -->
+                <div class="official-channel-row email-row">
+                  <span class="official-channel-icon email-icon">
+                    <i class="ph-bold ph-at"></i>
+                  </span>
+                  <span class="official-channel-value email-placeholder">email a definir com o domínio</span>
                 </div>
 
-                <div class="contact-working-hours">
-                  <span class="hours-title"><i class="ph ph-clock"></i> Horário de Funcionamento:</span>
-                  <span class="hours-desc">Segunda a Sexta-feira: 09:00 às 18:30</span>
-                </div>
+                <!-- Instagram Oficial -->
+                <a href="https://instagram.com/biobloom_portugal" target="_blank" rel="noopener" class="official-channel-row instagram-row">
+                  <span class="official-channel-icon instagram-icon">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                  </span>
+                  <span class="official-channel-value">@biobloom_portugal</span>
+                </a>
+
               </div>
             </div>
 
-            <!-- Contact / Booking Form -->
-            <div class="contact-form-column">
+            <!-- Divisor de Seção Elegante -->
+            <div class="contact-section-divider">
+              <span>Ou envie um pedido de proposta</span>
+            </div>
+
+            <!-- Formulário Rápido de Contacto / Proposta -->
+            <div class="contact-form-card">
               <form class="contact-booking-form" id="contactForm"
                 onsubmit="event.preventDefault(); window.handleContactSubmit();">
                 <div class="form-row two-cols">
@@ -656,47 +682,40 @@
 
                 <div class="form-row two-cols">
                   <div class="form-group">
-                    <label for="clientEmail" class="form-label">Correio Eletrónico / E-mail *</label>
+                    <label for="clientEmail" class="form-label">Correio Eletrónico *</label>
                     <input type="email" id="clientEmail" class="form-input" placeholder="o-seu-email@exemplo.pt"
                       required>
                   </div>
                   <div class="form-group">
                     <label for="serviceInterest" class="form-label">Serviço de Interesse</label>
                     <select id="serviceInterest" class="form-select">
-                      <option value="Jardins de Biodiversidade em Espaços Públicos & Corporativos">Jardins de
-                        Biodiversidade em Espaços Públicos & Empresas</option>
-                      <option value="Plantação de Flores Locais & Refúgios para Insetos">Plantação de Flores Locais &
-                        Refúgios para Insetos</option>
-                      <option value="Manutenção Ecológica Especializada">Manutenção Ecológica Especializada (100%
-                        Biológica)</option>
-                      <option value="Regeneração de Espaços Verdes Corporativos & Públicos">Regeneração de Espaços
-                        Verdes Corporativos & Públicos</option>
-                      <option value="Consultoria Botânica & Outro">Consultoria Ecológica & Outro</option>
+                      <option value="Os nossos jardins">Os nossos jardins (Biodiversidade & Solos)</option>
+                      <option value="Reuniões e Actividades na Natureza">Reuniões e Actividades na Natureza</option>
+                      <option value="Missão Social & Inclusão">Missão Social & Parcerias de Inclusão</option>
+                      <option value="Consultoria Ecológica & Outro">Consultoria Ecológica / Outro</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="projectLocation" class="form-label">Localização e Área Estimada do Espaço</label>
-                  <input type="text" id="projectLocation" class="form-input" placeholder="ex: Cascais, aprox. 800 m²">
+                  <label for="projectLocation" class="form-label">Localização e Área Estimada do Terreno</label>
+                  <input type="text" id="projectLocation" class="form-input" placeholder="ex: Sintra, aprox. 1.200 m²">
                 </div>
 
                 <div class="form-group">
-                  <label for="clientMessage" class="form-label">Descreva sucintamente o seu projeto ou
-                    necessidade</label>
+                  <label for="clientMessage" class="form-label">Descreva sucintamente o seu espaço ou objetivo</label>
                   <textarea id="clientMessage" class="form-textarea" rows="3"
-                    placeholder="Indique o tipo de terreno, exposição solar e os seus objetivos de sustentabilidade..."></textarea>
+                    placeholder="Indique se é um espaço empresarial ou municipal, relvado existente, etc..."></textarea>
                 </div>
 
                 <button type="submit" class="primary-action-btn full-width submit-btn" id="submitFormBtn">
-                  <span>Submeter Pedido de Proposta</span>
+                  <span>Enviar Pedido de Contacto</span>
                   <i class="ph ph-paper-plane-right"></i>
                 </button>
 
                 <div class="form-success-feedback" id="formSuccessMessage" style="display: none;">
                   <i class="ph ph-check-circle"></i>
-                  <span>Mensagem submetida com sucesso! A nossa equipa entrará em contacto nas próximas 24 horas
-                    úteis.</span>
+                  <span>Mensagem enviada com sucesso! A equipa da BioBloom responderá no prazo de 24 horas úteis.</span>
                 </div>
               </form>
             </div>
@@ -708,19 +727,8 @@
   </div>
 
 
-  <!-- LIGHTBOX IMAGE PREVIEW MODAL -->
-  <div class="lightbox-overlay" id="lightboxOverlay" aria-hidden="true">
-    <button class="lightbox-close-btn" id="closeLightboxBtn" aria-label="Fechar ampliação">
-      <i class="ph ph-x"></i>
-    </button>
-    <div class="lightbox-content">
-      <img src="" alt="Ampliação de Projeto" id="lightboxImg" class="lightbox-photo">
-      <div class="lightbox-caption-bar" id="lightboxCaption"></div>
-    </div>
-  </div>
-
-  <!-- JavaScript (Cache-Busted) -->
-  <script src="js/main.js?v=20261004_v8"></script>
+  <!-- JavaScript -->
+  <script src="js/main.js?v=20261006_v15"></script>
 </body>
 
 </html>
