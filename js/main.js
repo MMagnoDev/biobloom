@@ -16,12 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Preload all slideshow images in background for instant switching
   [
-    'assets/img/bg_slide_1.webp',
-    'assets/img/bg_slide_2.webp',
-    'assets/img/bg_slide_3.webp',
-    'assets/img/bg_slide_4.webp',
-    'assets/img/bg_slide_5.webp',
-    'assets/img/bg_slide_6.webp'
+    'assets/img/_DSC0827.webp',
+    'assets/img/_DSC0915.webp',
+    'assets/img/_DSC0896.webp',
+    'assets/img/_DSC6859.webp',
+    'assets/img/_DSC6787.webp',
+    'assets/img/_DSC6788.webp',
+    'assets/img/_DSC6789.webp'
   ].forEach(src => {
     const img = new Image();
     img.src = src;
@@ -159,6 +160,111 @@ document.addEventListener('DOMContentLoaded', () => {
       const subModal = e.target.closest('.custom-modal-backdrop');
       closeModal(subModal);
     });
+  });
+
+  // Hook Generic Sub-modal Back Buttons (data-back-to-modal)
+  document.querySelectorAll('[data-back-to-modal]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const parentId = btn.getAttribute('data-back-to-modal');
+      const currentModal = e.target.closest('.custom-modal-backdrop');
+      if (currentModal) closeModal(currentModal);
+      if (parentId) {
+        setTimeout(() => {
+          openModal(parentId);
+        }, 150);
+      }
+    });
+  });
+
+  // =========================================================================
+  // GALLERY PHOTO FILTERING & LIGHTBOX ENGINE
+  // =========================================================================
+  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+  const photoCards = document.querySelectorAll('.photo-item-card');
+  const lightbox = document.getElementById('galleryLightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+  const lightboxPrevBtn = document.getElementById('lightboxPrevBtn');
+  const lightboxNextBtn = document.getElementById('lightboxNextBtn');
+  let currentPhotoList = [];
+  let currentPhotoIndex = 0;
+
+  // Filter Buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      photoCards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Lightbox functions
+  function updateLightboxList() {
+    currentPhotoList = Array.from(photoCards).filter(c => c.style.display !== 'none');
+  }
+
+  function showLightboxIndex(idx) {
+    if (idx < 0) idx = currentPhotoList.length - 1;
+    if (idx >= currentPhotoList.length) idx = 0;
+    currentPhotoIndex = idx;
+
+    const currentCard = currentPhotoList[currentPhotoIndex];
+    if (currentCard && lightboxImg && lightboxCaption) {
+      lightboxImg.src = currentCard.getAttribute('data-full');
+      lightboxCaption.textContent = currentCard.getAttribute('data-caption') || '';
+    }
+  }
+
+  photoCards.forEach(card => {
+    card.addEventListener('click', () => {
+      updateLightboxList();
+      const cardIndex = currentPhotoList.indexOf(card);
+      showLightboxIndex(cardIndex >= 0 ? cardIndex : 0);
+      if (lightbox) {
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      }
+    });
+  });
+
+  function closeLightbox() {
+    if (lightbox) {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+  if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', (e) => { e.stopPropagation(); showLightboxIndex(currentPhotoIndex - 1); });
+  if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', (e) => { e.stopPropagation(); showLightboxIndex(currentPhotoIndex + 1); });
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // Escape key handler for lightbox and modals
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (lightbox && lightbox.classList.contains('is-open')) {
+        closeLightbox();
+      }
+    } else if (e.key === 'ArrowLeft' && lightbox && lightbox.classList.contains('is-open')) {
+      showLightboxIndex(currentPhotoIndex - 1);
+    } else if (e.key === 'ArrowRight' && lightbox && lightbox.classList.contains('is-open')) {
+      showLightboxIndex(currentPhotoIndex + 1);
+    }
   });
 
   // Hook Switch Buttons (Inline links between modals)

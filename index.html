@@ -20,10 +20,9 @@
 
   <!-- Preload First Slide for Instant Display -->
   <link rel="preload" as="image" href="assets/img/bg_slide_1.webp">
-  <link rel="preload" as="image" href="logoheader.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="logo.webp">
 
   <!-- Anti-Cache Meta Tags -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -38,18 +37,13 @@
 
   <!-- BACKGROUND CAROUSEL SLIDESHOW (IMAGENS WEBP DE ALTA QUALIDADE) -->
   <div class="bg-carousel-wrapper" id="bgCarousel">
-    <div class="bg-slide active" style="background-image: url('assets/img/bg_slide_1.webp');" data-index="0"
-      role="img" aria-label="Jardim de Biodiversidade BioBloom"></div>
-    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_2.webp');" data-index="1" role="img"
-      aria-label="Paisagismo Regenerativo"></div>
-    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_3.webp');" data-index="2" role="img"
-      aria-label="Flora Autóctone e Polinizadores"></div>
-    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_4.webp');" data-index="3"
-      role="img" aria-label="Espaço de Biodiversidade Natural"></div>
-    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_5.webp');" data-index="4" role="img"
-      aria-label="Microhabitats e Natureza Preservada"></div>
-    <div class="bg-slide" style="background-image: url('assets/img/bg_slide_6.webp');" data-index="5" role="img"
-      aria-label="Santuário Ecológico BioBloom"></div>
+    <div class="bg-slide active" style="background-image: url('assets/img/_DSC0827.webp');" data-index="0" role="img" aria-label="BioBloom Jardim de Biodiversidade 1"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/_DSC0915.webp');" data-index="1" role="img" aria-label="BioBloom Jardim de Biodiversidade 2"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/_DSC0896.webp');" data-index="2" role="img" aria-label="BioBloom Jardim de Biodiversidade 3"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/_DSC6859.webp');" data-index="3" role="img" aria-label="BioBloom Jardim de Biodiversidade 4"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/_DSC6787.webp');" data-index="4" role="img" aria-label="BioBloom Jardim de Biodiversidade 5"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/_DSC6788.webp');" data-index="5" role="img" aria-label="BioBloom Jardim de Biodiversidade 6"></div>
+    <div class="bg-slide" style="background-image: url('assets/img/_DSC6789.webp');" data-index="6" role="img" aria-label="BioBloom Jardim de Biodiversidade 7"></div>
 
     <!-- Cinematic Vignette & Ambient Overlays -->
     <div class="vignette-overlay"></div>
@@ -59,13 +53,6 @@
   <!-- MAIN VIEWPORT CONTAINER -->
   <main class="hero-container" id="mainContainer">
 
-    <!-- TOP BAR CONTROLS -->
-    <header class="top-nav-bar">
-      <div class="brand-monogram-wrapper" title="BioBloom Biodiversity Gardens">
-        <img src="logoheader.png" alt="BioBloom Logo" class="brand-top-logo">
-      </div>
-    </header>
-
     <!-- HERO CONTENT & VERTICAL MENU (ESTRUTURA CONFORME AS IMAGENS) -->
     <div class="hero-content-grid" id="heroContentGrid">
       <div class="hero-left-column">
@@ -73,7 +60,7 @@
         <!-- Official Brand Logo -->
         <div class="brand-identity-block">
           <a href="/" class="brand-hero-logo-link" aria-label="BioBloom Início">
-            <img src="logo.png" alt="BioBloom Biodiversity Gardens" class="brand-hero-logo">
+            <img src="logo.webp" alt="BioBloom Biodiversity Gardens" class="brand-hero-logo">
           </a>
         </div>
 
@@ -111,6 +98,13 @@
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
+          <!-- Botão 4: Galeria -->
+          <button class="menu-item-btn" data-open-modal="galleryModal" id="btnMenuGallery">
+            <span class="item-icon-box"><i class="ph ph-images"></i></span>
+            <span class="item-label">Galeria</span>
+            <i class="ph ph-arrow-up-right item-arrow"></i>
+          </button>
+
           <!-- Botão 4: Contactos rápidos -->
           <button class="menu-item-btn highlight-cta" data-open-modal="contactModal" id="btnMenuContact">
             <span class="item-icon-box"><i class="ph ph-chat-circle-dots"></i></span>
@@ -123,13 +117,17 @@
         <!-- Social Links Footer -->
         <div class="hero-quick-footer">
           <div class="social-links-row">
-            <a href="https://instagram.com/biobloom_portugal" target="_blank" rel="noopener" class="social-pill-link"
-              aria-label="Instagram @biobloom_portugal" title="@biobloom_portugal">
-              <i class="ph ph-instagram-logo"></i>
+            <a href="https://instagram.com/biobloom_portugal" target="_blank" rel="noopener" class="social-pill-link social-instagram"
+              aria-label="Instagram @biobloom_portugal" title="Instagram: @biobloom_portugal">
+              <i class="ph-bold ph-instagram-logo"></i>
             </a>
-            <a href="https://wa.me/351935793704" target="_blank" rel="noopener" class="social-pill-link"
-              aria-label="WhatsApp +351935793704" title="+351 935 793 704">
-              <i class="ph ph-whatsapp-logo"></i>
+            <a href="https://wa.me/351935793704" target="_blank" rel="noopener" class="social-pill-link social-whatsapp"
+              aria-label="WhatsApp +351935793704" title="WhatsApp: +351 935 793 704">
+              <i class="ph-bold ph-whatsapp-logo"></i>
+            </a>
+            <a href="https://www.youtube.com/@BioBloomPortugal" target="_blank" rel="noopener" class="social-pill-link social-youtube"
+              aria-label="YouTube @BioBloomPortugal" title="YouTube: @BioBloomPortugal">
+              <i class="ph-fill ph-youtube-logo"></i>
             </a>
           </div>
         </div>
@@ -384,7 +382,6 @@
       <div class="modal-glass-card">
         <header class="modal-card-header">
           <div class="modal-heading-group">
-            <span class="modal-kicker"><i class="ph ph-squares-four"></i> Portfólio de Soluções</span>
             <h2 class="modal-title">Os nossos Serviços</h2>
             <p class="modal-subtitle">Soluções completas de restauro botânico, jardins autóctones e experiências biofílicas para organizações.</p>
           </div>
@@ -401,9 +398,7 @@
             <!-- Serviço 1: Os nossos jardins (Conforme Imagem 4) -->
             <article class="service-duo-card" data-open-submodal="ourGardensModal" id="cardServiceGardens">
               <div class="service-duo-img-box" style="background-image: url('assets/img/servico_jardins.webp');">
-                <div class="service-duo-tag">
-                  <i class="ph ph-leaf"></i> Restauro Botânico
-                </div>
+                
               </div>
               <div class="service-duo-content">
                 <h3 class="service-duo-title">Os nossos jardins</h3>
@@ -421,10 +416,8 @@
 
             <!-- Serviço 2: Reuniões e Actividades na Natureza (Conforme Imagem 4) -->
             <article class="service-duo-card" data-open-submodal="meetingsNatureModal" id="cardServiceMeetings">
-              <div class="service-duo-img-box" style="background-image: url('assets/img/reunioes_natureza.webp');">
-                <div class="service-duo-tag">
-                  <i class="ph ph-users"></i> Conexão & ESG
-                </div>
+              <div class="service-duo-img-box" style="background-image: url('assets/img/reunioes_natureza.webp'); position: relative;">
+                <span class="service-badge-brevemente" style="position: absolute; top: 14px; left: 14px; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.35); color: #ffffff; padding: 6px 14px; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">BREVEMENTE</span>
               </div>
               <div class="service-duo-content">
                 <h3 class="service-duo-title">Reuniões e Actividades na Natureza</h3>
@@ -499,7 +492,7 @@
                   <i class="ph ph-drop-slash"></i>
                 </div>
                 <div class="benefit-highlight-text">
-                  <span class="benefit-tag">Diferencial BioBloom</span>
+                  <span class="benefit-tag">Soluções BioBloom</span>
                   <p class="benefit-bold-statement">
                     Uma solução sustentável e eficiente: os jardins não requerem rega e oferecemos <strong>3 anos de manutenção e monitorização gratuita</strong>.
                   </p>
@@ -551,12 +544,8 @@
             
             <!-- Coluna de Imagem (WhatsApp Image fornecida pelo usuário) -->
             <div class="about-media-column">
-              <div class="about-portrait-frame" style="height: 380px;">
-                <img src="assets/img/reunioes_natureza.webp" alt="Reuniões e Atividades na Natureza" class="about-photo" style="height: 100%;">
-                <div class="about-badge-tag">
-                  <strong>Espaços Regenerativos</strong>
-                  <span>Reuniões Corporativas & Bem-Estar</span>
-                </div>
+              <div class="about-portrait-frame" style="height: 100%; min-height: 440px;">
+                <img src="assets/img/_DSC2564.webp" alt="Pessoas em trilha na natureza - BioBloom" class="about-photo" style="height: 100%; object-fit: cover;">
               </div>
             </div>
 
@@ -606,6 +595,837 @@
   <!-- ========================================================================= -->
   <!-- MODAL 6: CONTACTOS RÁPIDOS (CONFORME IMAGEM 2 OFICIAL)                   -->
   <!-- ========================================================================= -->
+  <!-- ========================================================================= -->
+  <!-- MODAL: GALERIA (HUB PRINCIPAL)                                            -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop" id="galleryModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="custom-modal-dialog size-large">
+      <div class="modal-glass-card">
+        <header class="modal-card-header">
+          <div class="modal-heading-group">
+            <span class="modal-kicker"><i class="ph ph-sparkle"></i> Registos Visuais & Média</span>
+            <h2 class="modal-title">Galeria</h2>
+            <p class="modal-subtitle">Conheça a essência da BioBloom através de vídeos e fotografias de alta resolução da nossa biodiversidade viva.</p>
+          </div>
+          <button class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
+            <i class="ph ph-x"></i>
+          </button>
+        </header>
+
+        <div class="modal-card-body custom-scrollbar">
+          <div class="services-duo-grid gallery-hub-grid">
+
+            <!-- Opção 1: Vídeo -->
+            <article class="service-duo-card gallery-choice-card" data-open-submodal="galleryVideoModal" id="cardGalleryVideo">
+              <div class="service-duo-img-box gallery-choice-thumb" style="background-image: url('assets/img/_DSC0915.webp');">
+                <div class="service-duo-tag">
+                  <i class="ph-fill ph-youtube-logo" style="color: #FF0000;"></i> Canal & Vídeo
+                </div>
+                <div class="gallery-play-icon-overlay">
+                  <i class="ph-fill ph-play-circle"></i>
+                </div>
+              </div>
+              <div class="service-duo-content">
+                <h3 class="service-duo-title">Vídeo</h3>
+                <p class="service-duo-desc">
+                  Assista aos nossos conteúdos em vídeo: processos de restauro ecológico, polinizadores em ação e os bastidores no canal oficial BioBloom.
+                </p>
+                <div class="service-duo-footer">
+                  <button class="btn-service-action btn-service-highlight" data-open-submodal="galleryVideoModal">
+                    <i class="ph-fill ph-play"></i>
+                    <span>Abrir Vídeo</span>
+                    <i class="ph ph-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Opção 2: Fotos -->
+            <article class="service-duo-card gallery-choice-card" data-open-submodal="galleryPhotosModal" id="cardGalleryPhotos">
+              <div class="service-duo-img-box gallery-choice-thumb" style="background-image: url('assets/img/_DSC0896.webp');">
+                <div class="service-duo-tag">
+                  <i class="ph ph-camera"></i> Coleção Fotográfica
+                </div>
+                <div class="gallery-play-icon-overlay">
+                  <i class="ph-fill ph-images"></i>
+                </div>
+              </div>
+              <div class="service-duo-content">
+                <h3 class="service-duo-title">Fotos</h3>
+                <p class="service-duo-desc">
+                  Explore o nosso acervo de fotografia botânica e macro: flora autóctone, insetos nativos e a rica biodiversidade dos nossos jardins.
+                </p>
+                <div class="service-duo-footer">
+                  <button class="btn-service-action btn-service-highlight" data-open-submodal="galleryPhotosModal">
+                    <i class="ph ph-images"></i>
+                    <span>Abrir Fotos</span>
+                    <i class="ph ph-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: POP-UP VÍDEO (SUB-POPUP DA GALERIA)                                -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop nested-level-2" id="galleryVideoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="custom-modal-dialog size-large">
+      <div class="modal-glass-card">
+        
+        <header class="modal-card-header nested-header">
+          <div class="nested-back-btn-wrapper">
+            <button class="nested-back-btn" data-back-to-modal="galleryModal" id="btnBackToGalleryFromVideo" title="Voltar à Galeria" aria-label="Voltar à Galeria">
+              <i class="ph ph-arrow-left"></i>
+              <span>Voltar à Galeria</span>
+            </button>
+          </div>
+          <div class="modal-heading-group">
+            <h2 class="modal-title">Vídeo</h2>
+          </div>
+          <button class="modal-close-btn" data-close-nested-modal title="Fechar janela" aria-label="Fechar">
+            <i class="ph ph-x"></i>
+          </button>
+        </header>
+
+        <div class="modal-card-body custom-scrollbar">
+          <div class="gallery-video-layout">
+            
+            <!-- Video Player Principal Showcase -->
+            <div class="video-showcase-player-box">
+              <div class="video-player-aspect-frame">
+                <iframe 
+                  src="https://www.youtube.com/embed/TdTR4rDjMG0?rel=0" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  title="BioBloom Portugal Vídeos" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen
+                  class="video-iframe">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- YouTube Official Channel Banner -->
+            <div class="video-channel-cta-banner">
+              <div class="channel-cta-left">
+                <span class="channel-yt-badge"><i class="ph-fill ph-youtube-logo"></i> YouTube</span>
+                <div class="channel-cta-text">
+                  <h4 class="channel-title">Canal Oficial BioBloom Portugal</h4>
+                  <p class="channel-desc">Subscreva o nosso canal para acompanhar as produções em vídeo, sementeiras e monitorização biológica.</p>
+                </div>
+              </div>
+              <a href="https://www.youtube.com/@BioBloomPortugal" target="_blank" rel="noopener" class="btn-yt-subscribe">
+                <i class="ph-fill ph-play"></i>
+                <span>Ver Canal no YouTube</span>
+                <i class="ph ph-arrow-up-right"></i>
+              </a>
+            </div>
+
+            <!-- Video Highlights Grid -->
+            <div class="video-topics-grid">
+              <div class="video-topic-card">
+                <div class="video-topic-icon"><i class="ph ph-plant"></i></div>
+                <div class="video-topic-info">
+                  <h5>Restauro Ecológico</h5>
+                  <p>Documentários do processo de regeneração natural dos solos e recuperação da vegetação autóctone.</p>
+                </div>
+              </div>
+              <div class="video-topic-card">
+                <div class="video-topic-icon"><i class="ph ph-flower-lotus"></i></div>
+                <div class="video-topic-info">
+                  <h5>Fauna & Polinizadores</h5>
+                  <p>Macro-filmagens de abelhas nativas, borboletas e microfauna habitando os nossos santuários vivos.</p>
+                </div>
+              </div>
+              <div class="video-topic-card">
+                <div class="video-topic-icon"><i class="ph ph-users-three"></i></div>
+                <div class="video-topic-info">
+                  <h5>Atividades & Comunidade</h5>
+                  <p>Workshops de sementeira, voluntariado ecológico e reuniões corporativas ao ar livre.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: POP-UP FOTOS (SUB-POPUP DA GALERIA)                                -->
+  <!-- ========================================================================= -->
+  <div class="custom-modal-backdrop nested-level-2" id="galleryPhotosModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="custom-modal-dialog size-large">
+      <div class="modal-glass-card">
+        
+        <header class="modal-card-header nested-header">
+          <div class="nested-back-btn-wrapper">
+            <button class="nested-back-btn" data-back-to-modal="galleryModal" id="btnBackToGalleryFromPhotos" title="Voltar à Galeria" aria-label="Voltar à Galeria">
+              <i class="ph ph-arrow-left"></i>
+              <span>Voltar à Galeria</span>
+            </button>
+          </div>
+          <div class="modal-heading-group">
+            <h2 class="modal-title">Fotos</h2>
+          </div>
+          <button class="modal-close-btn" data-close-nested-modal title="Fechar janela" aria-label="Fechar">
+            <i class="ph ph-x"></i>
+          </button>
+        </header>
+
+        <div class="modal-card-body custom-scrollbar">
+          <div class="gallery-photos-layout">
+            
+            <!-- Barra de Filtros da Galeria -->
+            <div class="gallery-filter-bar">
+              <button class="gallery-filter-btn active" data-filter="all">Todas as Fotos (55)</button>
+              <button class="gallery-filter-btn" data-filter="polinizadores">Polinizadores & Fauna</button>
+              <button class="gallery-filter-btn" data-filter="flora">Flora Autóctone</button>
+              <button class="gallery-filter-btn" data-filter="jardins">Jardins &amp; Espaços</button>
+            </div>
+
+            <!-- Grid de Fotografias -->
+            <div class="gallery-photo-grid" id="galleryPhotoGrid">
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0827.webp" data-caption="Flores silvestres amarelas (Lotus corniculatus) em prado de biodiversidade">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0827.webp" alt="Lotus corniculatus & Flores Campestres" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Lotus corniculatus & Flores Campestres</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0915.webp" data-caption="Abelha nativa (Bombus) coletando pólen em floração silvestre roxa">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0915.webp" alt="Polinizador Nativo em Flor Roxa" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Polinizador Nativo em Flor Roxa</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0896.webp" data-caption="Borboleta Azul (Polyommatus icarus) pousada sobre margarida branca">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0896.webp" alt="Borboleta Azul em Margarida" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Borboleta Azul em Margarida</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6859.webp" data-caption="Margaridas silvestres em floração viva com inseto residente">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6859.webp" alt="Margaridas Silvestres & Microfauna" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Margaridas Silvestres & Microfauna</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6787.webp" data-caption="Cardo silvestre em flor púrpura ao lado de margarida branca">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6787.webp" alt="Cardo Roxo & Margarida" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Cardo Roxo & Margarida</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6788.webp" data-caption="Milfólio Rosa (Achillea millefolium) com polinizadores em pleno verão">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6788.webp" alt="Milfólio Rosa (Achillea millefolium)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Milfólio Rosa (Achillea millefolium)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC6789.webp" data-caption="Polinizador autóctone alimentando-se em margaridas naturais">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6789.webp" alt="Polinizador em Margarida Nativa" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Polinizador em Margarida Nativa</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0742.webp" data-caption="Inseto nativo polinizando espécies botânicas espontâneas">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0742.webp" alt="Polinizador em Flor Campestre" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Polinizador em Flor Campestre</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0747.webp" data-caption="Fauna autóctone ativa em refúgio natural de biodiversidade">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0747.webp" alt="Polinizador em Floração Silvestre" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Polinizador em Floração Silvestre</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0754.webp" data-caption="Espécies autóctones em pleno florescimento sob sol natural">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0754.webp" alt="Floração Silvestre de Verão" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Floração Silvestre de Verão</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0778.webp" data-caption="Detalhe da estrutura floral e botões de espécies espontâneas">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0778.webp" alt="Inflorescência Botânica" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Inflorescência Botânica</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0783.webp" data-caption="Microhabitat oferecendo alimento e abrigo para polinizadores">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0783.webp" alt="Abelha Solitária & Flora Viva" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Abelha Solitária & Flora Viva</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0800.webp" data-caption="Variedade botânica adaptada ao clima e sem rega artificial">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0800.webp" alt="Prado Campestre Autóctone" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Prado Campestre Autóctone</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0806.webp" data-caption="Borboleta nativa em simbiose com a flora campestre">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0806.webp" alt="Borboleta em Microhabitat" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Borboleta em Microhabitat</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0818.webp" data-caption="Diversidade botânica preservada em espaço sustentável">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0818.webp" alt="Espécies Autóctones em Flor" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Espécies Autóctones em Flor</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0857.webp" data-caption="Regeneração de prado com flora endémica e autóctone">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0857.webp" alt="Vegetação Natural & Biodiversidade" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Vegetação Natural & Biodiversidade</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0864.webp" data-caption="Cores e texturas da natureza original em solo regenerado">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0864.webp" alt="Flores Silvestres Espontâneas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Flores Silvestres Espontâneas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0898.webp" data-caption="Detalhe das asas e morfologia de borboleta nativa">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0898.webp" alt="Borboleta em Repouso" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Borboleta em Repouso</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0902.webp" data-caption="Interação ecológica fundamental para a regeneração natural">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0902.webp" alt="Polinizador em Flor Silvestre" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Polinizador em Flor Silvestre</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0905.webp" data-caption="Polinizador em atividade diária de forrageamento">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0905.webp" alt="Fauna Néctar & Pólen" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Fauna Néctar & Pólen</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6795.webp" data-caption="Macro-detalhe de pétalas e centro floral em alta nitidez">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6795.webp" alt="Margaridas em Pormenor" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Margaridas em Pormenor</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0748.webp" data-caption="Centáurea azul em floração entre a vegetação campestre">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0748.webp" alt="Centáurea Azul (Centaurea cyanus)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Centáurea Azul (Centaurea cyanus)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0782.webp" data-caption="Inflorescência roxa de luzerna, leguminosa que enriquece o solo">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0782.webp" alt="Luzerna em Flor (Medicago sativa)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Luzerna em Flor (Medicago sativa)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0787.webp" data-caption="Margarida silvestre com pequeno polinizador entre papoilas">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0787.webp" alt="Margarida com Inseto Nativo" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Margarida com Inseto Nativo</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0808.webp" data-caption="Trevo-violeta, fonte essencial de néctar para abelhas">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0808.webp" alt="Trevo-Violeta (Trifolium pratense)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Trevo-Violeta (Trifolium pratense)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0815.webp" data-caption="Espigas e gramíneas autóctones que abrigam microfauna">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0815.webp" alt="Gramíneas e Espigas Silvestres" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Gramíneas e Espigas Silvestres</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0900.webp" data-caption="Pequeno inseto auxiliar na folhagem verde do prado">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0900.webp" alt="Joaninha em Folhagem" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Joaninha em Folhagem</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0904.webp" data-caption="Folhas finas de gramíneas autóctones ao sol de verão">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0904.webp" alt="Gramíneas Nativas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Gramíneas Nativas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0913.webp" data-caption="Papoilas silvestres em pleno florescimento">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0913.webp" alt="Papoilas Vermelhas (Papaver rhoeas)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Papoilas Vermelhas (Papaver rhoeas)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC0916.webp" data-caption="Facélia em flor, uma das plantas preferidas pelas abelhas">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC0916.webp" alt="Facélia (Phacelia tanacetifolia)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Facélia (Phacelia tanacetifolia)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6764.webp" data-caption="Soagem azul em solo pedregoso, adaptada à secura">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6764.webp" alt="Soagem (Echium vulgare)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Soagem (Echium vulgare)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="jardins" data-full="assets/img/_DSC6779.webp" data-caption="Maciço denso de margaridas num jardim de biodiversidade">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6779.webp" alt="Maciço de Margaridas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Jardins & Espaços</span>
+                  <p class="photo-title">Maciço de Margaridas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6797.webp" data-caption="Milfólio rosa entre vegetação espontânea">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6797.webp" alt="Milfólio Rosa em Prado" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Milfólio Rosa em Prado</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6805.webp" data-caption="Centáurea azul sobre fundo de gravilha">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6805.webp" alt="Centáurea Solitária" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Centáurea Solitária</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6817.webp" data-caption="Trevo-encarnado e gramíneas num prado florido">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6817.webp" alt="Trevo-Encarnado & Gramíneas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Trevo-Encarnado & Gramíneas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6819.webp" data-caption="Luzerna roxa em flor rodeada de margaridas">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6819.webp" alt="Luzerna e Margaridas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Luzerna e Margaridas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6823.webp" data-caption="Tomilho florido ao lado de margarida em solo arenoso">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6823.webp" alt="Tomilho em Flor & Margarida" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Tomilho em Flor & Margarida</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="jardins" data-full="assets/img/_DSC6825.webp" data-caption="Canteiro de alfazema aromática em plena floração">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6825.webp" alt="Alfazema (Lavandula)" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Jardins & Espaços</span>
+                  <p class="photo-title">Alfazema (Lavandula)</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6834.webp" data-caption="Papoila vermelha isolada em terreno regenerado">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6834.webp" alt="Papoila em Solo Arenoso" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Papoila em Solo Arenoso</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="jardins" data-full="assets/img/_DSC6841.webp" data-caption="Faixa de papoilas e flores silvestres junto a via urbana">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6841.webp" alt="Prado de Papoilas Urbano" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Jardins & Espaços</span>
+                  <p class="photo-title">Prado de Papoilas Urbano</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6844.webp" data-caption="Arbusto de folhagem púrpura com inflorescência">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6844.webp" alt="Folhagem Púrpura em Flor" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Folhagem Púrpura em Flor</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6857.webp" data-caption="Papoila de tom carmim intenso sob luz natural">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6857.webp" alt="Papoila Carmim" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Papoila Carmim</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6860.webp" data-caption="Inflorescência de milfólio rosado em pormenor">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6860.webp" alt="Milfólio Rosado" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Milfólio Rosado</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6867.webp" data-caption="Flores vermelhas e amarelas de gaillardia em gravilha">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6867.webp" alt="Gaillardia em Flor" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Gaillardia em Flor</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6869.webp" data-caption="Centáurea azul vibrante em fundo desfocado">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6869.webp" alt="Centáurea Azul em Pormenor" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Centáurea Azul em Pormenor</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6877.webp" data-caption="Flor delicada de malva em tons rosa-claro">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6877.webp" alt="Malva Rosa" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Malva Rosa</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6881.webp" data-caption="Inflorescência rosa em arbusto de folha miúda">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6881.webp" alt="Inflorescência Rosa" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Inflorescência Rosa</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6882.webp" data-caption="Malvas rosadas em floração entre pedras">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6882.webp" alt="Malvas Rosadas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Malvas Rosadas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="jardins" data-full="assets/img/_DSC6888.webp" data-caption="Soagem florida num espaço verde empresarial">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6888.webp" alt="Soagem em Espaço Corporativo" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Jardins & Espaços</span>
+                  <p class="photo-title">Soagem em Espaço Corporativo</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6893.webp" data-caption="Arbusto de flores brancas em plena primavera">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6893.webp" alt="Flores Brancas Arbustivas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Flores Brancas Arbustivas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6895.webp" data-caption="Pequenas flores brancas e rosadas em forma de estrela">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6895.webp" alt="Arbusto de Flores Estreladas" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Arbusto de Flores Estreladas</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="jardins" data-full="assets/img/_DSC6901.webp" data-caption="Canteiro de roseiras vermelhas num espaço exterior">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6901.webp" alt="Roseiral em Flor" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Jardins & Espaços</span>
+                  <p class="photo-title">Roseiral em Flor</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC6934.webp" data-caption="Abelha a recolher pólen no centro de uma margarida">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6934.webp" alt="Abelha em Margarida" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Abelha em Margarida</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC6940.webp" data-caption="Centáurea azul entre vegetação espontânea">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6940.webp" alt="Centáurea entre Vegetação" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Flora Autóctone</span>
+                  <p class="photo-title">Centáurea entre Vegetação</p>
+                </div>
+              </div>
+
+              <div class="photo-item-card" data-category="polinizadores" data-full="assets/img/_DSC6941.webp" data-caption="Rosas rosa-vivo com inseto polinizador">
+                <div class="photo-thumb-wrapper">
+                  <img src="assets/img/_DSC6941.webp" alt="Rosas com Polinizador" class="gallery-img-thumb" loading="lazy">
+                  <div class="photo-zoom-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="photo-meta-info">
+                  <span class="photo-category-pill">Polinizadores & Fauna</span>
+                  <p class="photo-title">Rosas com Polinizador</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- LIGHTBOX VIEWER PARA FOTOS -->
+  <div class="gallery-lightbox-overlay" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Fechar visualização">
+      <i class="ph ph-x"></i>
+    </button>
+    <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" aria-label="Foto anterior">
+      <i class="ph ph-caret-left"></i>
+    </button>
+    <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" aria-label="Próxima foto">
+      <i class="ph ph-caret-right"></i>
+    </button>
+    <div class="lightbox-content-box">
+      <img src="" alt="" class="lightbox-full-img" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+
   <div class="custom-modal-backdrop" id="contactModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -627,7 +1447,7 @@
             <div class="contact-card-banner">
               <!-- Lado Esquerdo: Card Quadrado com Logo e Fundo Verde Sage -->
               <div class="contact-brand-square">
-                <img src="logo.png" alt="BioBloom Biodiversity Gardens" class="contact-brand-logo-img">
+                <img src="logo.webp" alt="BioBloom Biodiversity Gardens" class="contact-brand-logo-img">
               </div>
 
               <!-- Lado Direito: Os 3 Canais de Comunicação com Espaçamento Perfeito -->
@@ -692,7 +1512,6 @@
                       <option value="Os nossos jardins">Os nossos jardins (Biodiversidade & Solos)</option>
                       <option value="Reuniões e Actividades na Natureza">Reuniões e Actividades na Natureza</option>
                       <option value="Missão Social & Inclusão">Missão Social & Parcerias de Inclusão</option>
-                      <option value="Consultoria Ecológica & Outro">Consultoria Ecológica / Outro</option>
                     </select>
                   </div>
                 </div>
