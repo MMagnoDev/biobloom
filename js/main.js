@@ -366,4 +366,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 800);
   };
 
+
+  // =========================================================================
+  // 5. YOUTUBE PLAYER: DISABLE AUTOMATIC CAPTIONS BY DEFAULT
+  // =========================================================================
+  const ytIframe = document.getElementById('biobloomYoutubePlayer');
+  if (ytIframe) {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+
+    let ytPlayer = null;
+    const disableAutoCaptions = () => {
+      if (!ytPlayer) return;
+      try {
+        if (typeof ytPlayer.unloadModule === 'function') {
+          ytPlayer.unloadModule('captions');
+          ytPlayer.unloadModule('cc');
+        }
+      } catch (_) {}
+    };
+
+    window.onYouTubeIframeAPIReady = function() {
+      ytPlayer = new window.YT.Player('biobloomYoutubePlayer', {
+        events: {
+          onReady: disableAutoCaptions,
+          onApiChange: disableAutoCaptions,
+          onStateChange: (e) => {
+            if (e.data === 1) disableAutoCaptions();
+          }
+        }
+      });
+    };
+  }
+
 });
