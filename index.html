@@ -8,7 +8,7 @@
   <meta name="description"
     content="Projetos de jardins de biodiversidade, regeneração de solos e flora autóctone por BioBloom em Portugal. Restauro da natureza original e impacto socioambiental positivo.">
 
-  <!-- Google Fonts: Manrope + Cormorant Garamond -->
+  <!-- Tipografia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -18,24 +18,24 @@
   <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-  <!-- Preload First Slide for Instant Display -->
+  <!-- Pré-carregamento da primeira imagem -->
   <link rel="preload" as="image" href="assets/img/bg_slide_1.webp">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo.webp">
+  <link rel="icon" type="image/webp" href="assets/img/logo.webp">
 
-  <!-- Anti-Cache Meta Tags -->
+  <!-- Controlo de cache -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=20261006_v15">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/style.css?v=20261006_v15">
 </head>
 
 <body>
 
-  <!-- BACKGROUND CAROUSEL SLIDESHOW (IMAGENS WEBP DE ALTA QUALIDADE) -->
+  <!-- Fundo em carrossel -->
   <div class="bg-carousel-wrapper" id="bgCarousel">
     <div class="bg-slide active" style="background-image: url('assets/img/_DSC0827.webp');" data-index="0" role="img" aria-label="BioBloom Jardim de Biodiversidade 1"></div>
     <div class="bg-slide" style="background-image: url('assets/img/_DSC0915.webp');" data-index="1" role="img" aria-label="BioBloom Jardim de Biodiversidade 2"></div>
@@ -45,26 +45,26 @@
     <div class="bg-slide" style="background-image: url('assets/img/_DSC6788.webp');" data-index="5" role="img" aria-label="BioBloom Jardim de Biodiversidade 6"></div>
     <div class="bg-slide" style="background-image: url('assets/img/_DSC6789.webp');" data-index="6" role="img" aria-label="BioBloom Jardim de Biodiversidade 7"></div>
 
-    <!-- Cinematic Vignette & Ambient Overlays -->
+    <!-- Sobreposições de contraste -->
     <div class="vignette-overlay"></div>
     <div class="organic-pattern-overlay"></div>
   </div>
 
-  <!-- MAIN VIEWPORT CONTAINER -->
+  <!-- Conteúdo principal -->
   <main class="hero-container" id="mainContainer">
 
-    <!-- HERO CONTENT & VERTICAL MENU (ESTRUTURA CONFORME AS IMAGENS) -->
+    <!-- Apresentação e menu principal -->
     <div class="hero-content-grid" id="heroContentGrid">
       <div class="hero-left-column">
 
-        <!-- Official Brand Logo -->
+        <!-- Logótipo -->
         <div class="brand-identity-block">
           <a href="/" class="brand-hero-logo-link" aria-label="BioBloom Início">
-            <img src="logo.webp" alt="BioBloom Biodiversity Gardens" class="brand-hero-logo">
+            <img src="assets/img/logo.webp" alt="BioBloom Biodiversity Gardens" class="brand-hero-logo">
           </a>
         </div>
 
-        <!-- Headline & Philosophy -->
+        <!-- Título e descrição -->
         <div class="brand-tagline-block">
           <h2 class="brand-tagline">
             Restauramos a natureza original em espaços públicos e corporativos através da biodiversidade viva.
@@ -74,38 +74,38 @@
           </p>
         </div>
 
-        <!-- Vertical Interactive Menu (4 BOTÕES OFICIAIS) -->
+        <!-- Menu de navegação -->
         <nav class="vertical-links-menu" aria-label="Menu Principal">
 
-          <!-- Botão 1: Sobre nós -->
+          <!-- Sobre nós -->
           <button class="menu-item-btn" data-open-modal="aboutModal" id="btnMenuAbout">
             <span class="item-icon-box"><i class="ph ph-heart-straight"></i></span>
             <span class="item-label">Sobre nós</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
-          <!-- Botão 2: O que é um Jardim de Biodiversidade -->
+          <!-- Jardim de Biodiversidade -->
           <button class="menu-item-btn" data-open-modal="biodiversityModal" id="btnMenuBiodiversity">
             <span class="item-icon-box"><i class="ph ph-flower-lotus"></i></span>
             <span class="item-label">O que é um Jardim de Biodiversidade</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
-          <!-- Botão 3: Os nossos Serviços -->
+          <!-- Serviços -->
           <button class="menu-item-btn" data-open-modal="servicesModal" id="btnMenuServices">
             <span class="item-icon-box"><i class="ph ph-plant"></i></span>
             <span class="item-label">Os nossos Serviços</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
-          <!-- Botão 4: Galeria -->
+          <!-- Galeria -->
           <button class="menu-item-btn" data-open-modal="galleryModal" id="btnMenuGallery">
             <span class="item-icon-box"><i class="ph ph-images"></i></span>
             <span class="item-label">Galeria</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
-          <!-- Botão 4: Contactos rápidos -->
+          <!-- Contactos -->
           <button class="menu-item-btn highlight-cta" data-open-modal="contactModal" id="btnMenuContact">
             <span class="item-icon-box"><i class="ph ph-chat-circle-dots"></i></span>
             <span class="item-label">Contactos rápidos</span>
@@ -114,7 +114,7 @@
 
         </nav>
 
-        <!-- Social Links Footer -->
+        <!-- Redes sociais -->
         <div class="hero-quick-footer">
           <div class="social-links-row">
             <a href="https://instagram.com/biobloom_portugal" target="_blank" rel="noopener" class="social-pill-link social-instagram"
@@ -137,9 +137,7 @@
   </main>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL 1: SOBRE NÓS (CONFORME IMAGEM 2)                                    -->
-  <!-- ========================================================================= -->
+  <!-- Modal: Sobre nós -->
   <div class="custom-modal-backdrop" id="aboutModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -156,7 +154,7 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="about-grid-layout">
             
-            <!-- Coluna de Imagem / Identidade Visual -->
+            <!-- Imagem -->
             <div class="about-media-column">
               <div class="about-portrait-frame">
                 <img src="assets/img/sobre_nos.webp" alt="Jardim de Biodiversidade BioBloom" class="about-photo">
@@ -171,10 +169,10 @@
               </div>
             </div>
 
-            <!-- Coluna de Conteúdo Estruturado Conforme Imagem 2 -->
+            <!-- Conteúdo -->
             <div class="about-text-column">
               
-              <!-- BLOCO 1: MISSÃO AMBIENTAL -->
+              <!-- Missão Ambiental -->
               <div class="mission-section-card">
                 <div class="mission-badge-header">
                   <span class="mission-pill-icon"><i class="ph ph-globe-hemisphere-west"></i></span>
@@ -191,7 +189,7 @@
                     Em total alinhamento com o <strong>Plano Nacional de Restauro da Natureza</strong>, disponibilizamos a empresas e municípios soluções para criar jardins de biodiversidade autóctone e endémica. O nosso objetivo é ajudar as organizações a valorizarem os seus espaços verdes, contribuindo ativamente para a proteção e recuperação da fauna e flora vulneráveis no nosso país.
                   </p>
                   
-                  <!-- Links Interativos para Serviços e Contactos -->
+                  <!-- Atalhos -->
                   <div class="editorial-cta-banner">
                     <span class="cta-banner-text">Sabe mais na nossa página de <strong>Serviços</strong> ou vai à nossa página de <strong>Contactos</strong>!</span>
                     <div class="cta-banner-buttons">
@@ -208,7 +206,7 @@
                 </div>
               </div>
 
-              <!-- BLOCO 2: MISSÃO SOCIAL -->
+              <!-- Missão Social -->
               <div class="mission-section-card">
                 <div class="mission-badge-header">
                   <span class="mission-pill-icon social-icon"><i class="ph ph-users-three"></i></span>
@@ -222,7 +220,7 @@
                     O nosso objetivo é garantir que estas pessoas tenham acesso a oportunidades profissionais com remunerações dignas, promovendo ativamente a sua autonomia financeira, valorização e inclusão social através do contacto com a natureza.
                   </p>
                   
-                  <!-- Call to action para Contactos -->
+                  <!-- Ação -->
                   <div class="editorial-cta-banner social-banner">
                     <span class="cta-banner-text">Queres saber mais sobre o nosso impacto social? <strong>Contacta-nos aqui!</strong></span>
                     <div class="cta-banner-buttons">
@@ -243,9 +241,7 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL 2: O QUE É UM JARDIM DE BIODIVERSIDADE (CONFORME IMAGEM 3)          -->
-  <!-- ========================================================================= -->
+  <!-- Modal: O que é um Jardim de Biodiversidade -->
   <div class="custom-modal-backdrop" id="biodiversityModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -262,7 +258,7 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="biodiversity-grid-layout">
             
-            <!-- Coluna de Imagens Florais Verticais (WebP de Alta Qualidade) -->
+            <!-- Imagens -->
             <div class="biodiversity-photos-column">
               <div class="flora-strip-card">
                 <img src="assets/img/flora_1.webp" alt="Flora autóctone e polinizadores" class="flora-strip-img">
@@ -278,10 +274,10 @@
               </div>
             </div>
 
-            <!-- Coluna de Conteúdo Integral Conforme Imagem 3 -->
+            <!-- Conteúdo -->
             <div class="biodiversity-text-column">
 
-              <!-- Diagnóstico e Estatísticas de Portugal -->
+              <!-- Enquadramento -->
               <div class="bio-intro-box">
                 <p class="editorial-body">
                   Em Portugal, <strong>381 espécies de plantas autóctones estão ameaçadas de extinção</strong>, das quais <strong>53 são endémicas</strong> do nosso país.
@@ -297,7 +293,7 @@
                 </p>
               </div>
 
-              <!-- O que fazemos exatamente? -->
+              <!-- Abordagem -->
               <div class="bio-actions-card">
                 <h3 class="bio-actions-heading">
                   <i class="ph ph-sparkle"></i> O que fazemos exatamente?
@@ -346,7 +342,7 @@
                 </ul>
               </div>
 
-              <!-- Destaque Conclusivo Mosaicos de Biodiversidade -->
+              <!-- Destaque -->
               <div class="bio-conclusion-callout">
                 <i class="ph ph-shield-check"></i>
                 <p>
@@ -354,7 +350,7 @@
                 </p>
               </div>
 
-              <!-- Botões de Ação -->
+              <!-- Ações -->
               <div class="modal-cta-row">
                 <button class="primary-action-btn" data-switch-modal="servicesModal">
                   <span>Conhecer os Nossos Serviços</span>
@@ -374,9 +370,7 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL 3: OS NOSSOS SERVIÇOS (CONFORME IMAGEM 4)                           -->
-  <!-- ========================================================================= -->
+  <!-- Modal: Os nossos Serviços -->
   <div class="custom-modal-backdrop" id="servicesModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -392,10 +386,10 @@
 
         <div class="modal-card-body custom-scrollbar">
           
-          <!-- Grid com os 2 Serviços Exatos Mostrados na Imagem 4 -->
+          <!-- Lista de serviços -->
           <div class="services-duo-grid">
 
-            <!-- Serviço 1: Os nossos jardins (Conforme Imagem 4) -->
+            <!-- Serviço: Os nossos jardins -->
             <article class="service-duo-card" data-open-submodal="ourGardensModal" id="cardServiceGardens">
               <div class="service-duo-img-box" style="background-image: url('assets/img/servico_jardins.webp');">
                 
@@ -414,7 +408,7 @@
               </div>
             </article>
 
-            <!-- Serviço 2: Reuniões e Actividades na Natureza (Conforme Imagem 4) -->
+            <!-- Serviço: Reuniões e Actividades na Natureza -->
             <article class="service-duo-card" data-open-submodal="meetingsNatureModal" id="cardServiceMeetings">
               <div class="service-duo-img-box" style="background-image: url('assets/img/reunioes_natureza.webp'); position: relative;">
                 <span class="service-badge-brevemente" style="position: absolute; top: 14px; left: 14px; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.35); color: #ffffff; padding: 6px 14px; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">BREVEMENTE</span>
@@ -441,14 +435,12 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL 4 (SUB-POPUP): OS NOSSOS JARDINS (CONFORME IMAGEM 5)                -->
-  <!-- ========================================================================= -->
+  <!-- Submodal: Os nossos jardins -->
   <div class="custom-modal-backdrop nested-level-2" id="ourGardensModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
         
-        <!-- Header com botão de voltar aos serviços conforme imagem de cascata -->
+        <!-- Cabeçalho -->
         <header class="modal-card-header nested-header">
           <div class="nested-back-btn-wrapper">
             <button class="nested-back-btn" id="btnBackToServicesFromGardens" title="Voltar aos Serviços" aria-label="Voltar aos Serviços">
@@ -467,7 +459,7 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="gardens-detail-layout">
             
-            <!-- Coluna Esquerda: Mosaico Oficial GridArt Fornecido na Imagem 5 -->
+            <!-- Mosaico -->
             <div class="mosaic-photo-column">
               <div class="mosaic-single-frame">
                 <img src="assets/img/mosaico_jardins.webp" alt="Mosaico de Flora e Biodiversidade BioBloom" class="mosaic-full-img">
@@ -475,7 +467,7 @@
               <span class="mosaic-caption-tag"><i class="ph ph-sparkle"></i> Variedade de flora autóctone e microhabitats</span>
             </div>
 
-            <!-- Coluna Direita: Conteúdo Literal Conforme Imagem 5 -->
+            <!-- Conteúdo -->
             <div class="gardens-detail-content">
               
               <p class="editorial-body lead-editorial">
@@ -486,7 +478,7 @@
                 Estes ecossistemas servem de refúgio e alimento a centenas de insetos nativos, essenciais para a sobrevivência de aves e répteis locais. Ao adotar este projeto, <strong>empresas e municípios alinham-se com o Plano Nacional de Restauro da Natureza</strong> e protegem espécies locais em perigo.
               </p>
 
-              <!-- Destaque Conforme Imagem 5: Sem rega e 3 anos de manutenção gratuita -->
+              <!-- Destaque -->
               <div class="benefit-highlight-box">
                 <div class="benefit-icon-ring">
                   <i class="ph ph-drop-slash"></i>
@@ -499,7 +491,7 @@
                 </div>
               </div>
 
-              <!-- Botão de Ação Direta para Pedido de Proposta -->
+              <!-- Ação -->
               <div class="detail-action-buttons">
                 <button class="primary-action-btn full-width" id="btnRequestGardensQuote">
                   <span>Pedir Proposta para os Nossos Jardins</span>
@@ -517,9 +509,7 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL 5 (SUB-POPUP): REUNIÕES E ACTIVIDADES NA NATUREZA                   -->
-  <!-- ========================================================================= -->
+  <!-- Submodal: Reuniões e Actividades na Natureza -->
   <div class="custom-modal-backdrop nested-level-2" id="meetingsNatureModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -542,14 +532,14 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="gardens-detail-layout">
             
-            <!-- Coluna de Imagem (WhatsApp Image fornecida pelo usuário) -->
+            <!-- Imagem -->
             <div class="about-media-column">
               <div class="about-portrait-frame" style="height: 100%; min-height: 440px;">
                 <img src="assets/img/_DSC2564.webp" alt="Pessoas em trilha na natureza - BioBloom" class="about-photo" style="height: 100%; object-fit: cover;">
               </div>
             </div>
 
-            <!-- Conteúdo Literal Conforme Imagem do Usuário -->
+            <!-- Conteúdo -->
             <div class="gardens-detail-content">
               <p class="editorial-body lead-editorial" style="font-weight: 700; color: #ffffff;">
                 Apesar de Portugal ser um território riquíssimo em biodiversidade e espécies endémicas, grande parte deste património natural ainda é desconhecida pela sociedade.
@@ -575,7 +565,7 @@
                 </div>
               </div>
 
-              <!-- Botão de Ação Direta -->
+              <!-- Ação -->
               <div class="detail-action-buttons">
                 <button class="primary-action-btn full-width" id="btnRequestMeetingsQuote" style="background: linear-gradient(135deg, #798f60 0%, #5d7049 100%);">
                   <span>Fala connosco / Agendar Espaço</span>
@@ -592,12 +582,7 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL 6: CONTACTOS RÁPIDOS (CONFORME IMAGEM 2 OFICIAL)                   -->
-  <!-- ========================================================================= -->
-  <!-- ========================================================================= -->
-  <!-- MODAL: GALERIA (HUB PRINCIPAL)                                            -->
-  <!-- ========================================================================= -->
+  <!-- Modal: Galeria -->
   <div class="custom-modal-backdrop" id="galleryModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -615,7 +600,7 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="services-duo-grid gallery-hub-grid">
 
-            <!-- Opção 1: Vídeo -->
+            <!-- Vídeo -->
             <article class="service-duo-card gallery-choice-card" data-open-submodal="galleryVideoModal" id="cardGalleryVideo">
               <div class="service-duo-img-box gallery-choice-thumb" style="background-image: url('assets/img/_DSC0915.webp');">
                 <div class="service-duo-tag">
@@ -640,7 +625,7 @@
               </div>
             </article>
 
-            <!-- Opção 2: Fotos -->
+            <!-- Fotos -->
             <article class="service-duo-card gallery-choice-card" data-open-submodal="galleryPhotosModal" id="cardGalleryPhotos">
               <div class="service-duo-img-box gallery-choice-thumb" style="background-image: url('assets/img/_DSC0896.webp');">
                 <div class="service-duo-tag">
@@ -672,9 +657,7 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL: POP-UP VÍDEO (SUB-POPUP DA GALERIA)                                -->
-  <!-- ========================================================================= -->
+  <!-- Submodal: Vídeo -->
   <div class="custom-modal-backdrop nested-level-2" id="galleryVideoModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -697,7 +680,7 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="gallery-video-layout">
             
-            <!-- Video Player Principal Showcase -->
+            <!-- Reprodutor de vídeo -->
             <div class="video-showcase-player-box">
               <div class="video-player-aspect-frame">
                 <iframe 
@@ -713,7 +696,7 @@
               </div>
             </div>
 
-            <!-- YouTube Official Channel Banner -->
+            <!-- Canal YouTube -->
             <div class="video-channel-cta-banner">
               <div class="channel-cta-left">
                 <span class="channel-yt-badge"><i class="ph-fill ph-youtube-logo"></i> YouTube</span>
@@ -737,9 +720,7 @@
   </div>
 
 
-  <!-- ========================================================================= -->
-  <!-- MODAL: POP-UP FOTOS (SUB-POPUP DA GALERIA)                                -->
-  <!-- ========================================================================= -->
+  <!-- Submodal: Fotos -->
   <div class="custom-modal-backdrop nested-level-2" id="galleryPhotosModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
       <div class="modal-glass-card">
@@ -762,7 +743,7 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="gallery-photos-layout">
             
-            <!-- Barra de Filtros da Galeria -->
+            <!-- Filtros -->
             <div class="gallery-filter-bar">
               <button class="gallery-filter-btn active" data-filter="all">Todas as Fotos (55)</button>
               <button class="gallery-filter-btn" data-filter="polinizadores">Polinizadores & Fauna</button>
@@ -770,7 +751,7 @@
               <button class="gallery-filter-btn" data-filter="jardins">Jardins &amp; Espaços</button>
             </div>
 
-            <!-- Grid de Fotografias -->
+            <!-- Grelha de fotografias -->
             <div class="gallery-photo-grid" id="galleryPhotoGrid">
               <div class="photo-item-card" data-category="flora" data-full="assets/img/_DSC0827.webp" data-caption="Flores silvestres amarelas (Lotus corniculatus) em prado de biodiversidade">
                 <div class="photo-thumb-wrapper">
@@ -1384,7 +1365,7 @@
   </div>
 
 
-  <!-- LIGHTBOX VIEWER PARA FOTOS -->
+  <!-- Visualizador de fotografias -->
   <div class="gallery-lightbox-overlay" id="galleryLightbox" aria-hidden="true">
     <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Fechar visualização">
       <i class="ph ph-x"></i>
@@ -1419,17 +1400,17 @@
         <div class="modal-card-body custom-scrollbar">
           <div class="contact-modal-wrapper">
 
-            <!-- Card Oficial de Contactos Conforme Imagem 2 do Usuário -->
+            <!-- Contactos diretos -->
             <div class="contact-card-banner">
-              <!-- Lado Esquerdo: Card Quadrado com Logo e Fundo Verde Sage -->
+              <!-- Marca -->
               <div class="contact-brand-square">
-                <img src="logo.webp" alt="BioBloom Biodiversity Gardens" class="contact-brand-logo-img">
+                <img src="assets/img/logo.webp" alt="BioBloom Biodiversity Gardens" class="contact-brand-logo-img">
               </div>
 
-              <!-- Lado Direito: Os 3 Canais de Comunicação com Espaçamento Perfeito -->
+              <!-- Canais -->
               <div class="contact-official-channels">
                 
-                <!-- WhatsApp Oficial -->
+                <!-- WhatsApp -->
                 <a href="https://wa.me/351935793704" target="_blank" rel="noopener" class="official-channel-row whatsapp-row">
                   <span class="official-channel-icon whatsapp-icon">
                     <i class="ph-fill ph-whatsapp-logo"></i>
@@ -1437,7 +1418,7 @@
                   <span class="official-channel-value">+351935793704</span>
                 </a>
 
-                <!-- Email Oficial -->
+                <!-- Email -->
                 <a href="mailto:info@biobloom.pt" class="official-channel-row email-row">
                   <span class="official-channel-icon email-icon">
                     <i class="ph-bold ph-at"></i>
@@ -1445,7 +1426,7 @@
                   <span class="official-channel-value">info@biobloom.pt</span>
                 </a>
 
-                <!-- Instagram Oficial -->
+                <!-- Instagram -->
                 <a href="https://instagram.com/biobloom_portugal" target="_blank" rel="noopener" class="official-channel-row instagram-row">
                   <span class="official-channel-icon instagram-icon">
                     <i class="ph-fill ph-instagram-logo"></i>
@@ -1456,12 +1437,12 @@
               </div>
             </div>
 
-            <!-- Divisor de Seção Elegante -->
+            <!-- Separador -->
             <div class="contact-section-divider">
               <span>Ou envie um pedido de proposta</span>
             </div>
 
-            <!-- Formulário Rápido de Contacto / Proposta -->
+            <!-- Formulário de contacto -->
             <div class="contact-form-card">
               <form class="contact-booking-form" id="contactForm"
                 onsubmit="event.preventDefault(); window.handleContactSubmit();">
@@ -1522,8 +1503,8 @@
   </div>
 
 
-  <!-- JavaScript -->
-  <script src="js/main.js?v=20261006_v15"></script>
+  <!-- Scripts -->
+  <script src="assets/js/main.js?v=20261006_v15"></script>
 </body>
 
 </html>

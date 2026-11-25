@@ -1,14 +1,11 @@
-/* ==========================================================================
-   BIOBLOOM | JARDINS DE BIODIVERSIDADE
-   Design System, Precision Layout, Spacing & Full Responsive Rules
-   ========================================================================== */
+/* BioBloom - Estilos principais */
 
 :root {
-  /* Typography */
+  /* Tipografia */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  /* Color Palette */
+  /* Cores */
   --color-bg-deep: #080d0a;
   --color-bg-dark: #0e1611;
   --color-bg-surface: #142019;
@@ -30,7 +27,7 @@
   --color-text-muted: #869684;
   --color-text-dim: #5c6c5b;
 
-  /* Standard Spacing Scale */
+  /* Espaçamentos */
   --space-4: 4px;
   --space-8: 8px;
   --space-10: 10px;
@@ -49,23 +46,21 @@
   --space-64: 64px;
   --space-80: 80px;
 
-  /* Layout Boundaries */
+  /* Dimensões e raios */
   --max-width-container: 1280px;
   --border-radius-sm: 8px;
   --border-radius-md: 14px;
   --border-radius-lg: 20px;
   --border-radius-pill: 9999px;
 
-  /* Motion & Shadows */
+  /* Sombras e transições */
   --shadow-elevation: 0 28px 56px -12px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.07);
   --shadow-card: 0 12px 28px -4px rgba(0, 0, 0, 0.5);
   --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s ease;
 }
 
-/* ==========================================================================
-   RESET & CORE BOX SIZING
-   ========================================================================== */
+/* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -93,7 +88,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Scrollbar (Used strictly inside modal dialog bodies) */
+/* Scrollbar dos modais */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -109,9 +104,7 @@ body {
   background: var(--color-accent-gold);
 }
 
-/* ==========================================================================
-   BACKGROUND CAROUSEL & ATMOSPHERE
-   ========================================================================== */
+/* Carrossel de fundo */
 .bg-carousel-wrapper {
   position: fixed;
   inset: 0;
@@ -171,9 +164,7 @@ body {
   z-index: 3;
 }
 
-/* ==========================================================================
-   MAIN HERO VIEWPORT (PRECISION 100% FIT - ZERO SCROLLBAR)
-   ========================================================================== */
+/* Secção principal */
 .hero-container {
   position: relative;
   z-index: 10;
@@ -191,7 +182,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Top Nav Bar */
+/* Barra superior */
 .top-nav-bar {
   display: flex;
   align-items: center;
@@ -230,7 +221,7 @@ body {
   color: var(--color-text-muted);
 }
 
-/* Hero Content Block */
+/* Conteúdo principal */
 .hero-content-grid {
   display: flex;
   flex-direction: column;
@@ -291,7 +282,7 @@ body {
   max-width: 540px;
 }
 
-/* Vertical Links Menu */
+/* Menu principal */
 .vertical-links-menu {
   display: flex;
   flex-direction: column;
@@ -413,7 +404,7 @@ body {
   border-color: var(--color-accent-gold);
 }
 
-/* Social Links Footer */
+/* Redes sociais */
 .hero-quick-footer {
   display: flex;
   align-items: center;
@@ -447,7 +438,7 @@ body {
   overflow: hidden;
 }
 
-/* Instagram - Cores Originais Oficiais */
+/* Instagram */
 .social-pill-link.social-instagram {
   border-color: rgba(225, 48, 108, 0.35);
 }
@@ -472,7 +463,7 @@ body {
   transform: scale(1.12);
 }
 
-/* WhatsApp - Cores Originais Oficiais */
+/* WhatsApp */
 .social-pill-link.social-whatsapp {
   border-color: rgba(37, 211, 102, 0.35);
 }
@@ -494,7 +485,7 @@ body {
   transform: scale(1.12);
 }
 
-/* YouTube - Cores Originais Oficiais */
+/* YouTube */
 .social-pill-link.social-youtube {
   border-color: rgba(255, 0, 0, 0.35);
 }
@@ -516,9 +507,7 @@ body {
   transform: scale(1.12);
 }
 
-/* ==========================================================================
-   MODALS ARCHITECTURE & BACKDROP (PROPORTIONAL, SPACIOUS & EDITORIAL)
-   ========================================================================== */
+/* Modais */
 .custom-modal-backdrop {
   position: fixed;
   inset: 0;
@@ -583,7 +572,7 @@ body {
   position: relative;
 }
 
-/* Modal Header */
+/* Cabeçalho do modal */
 .modal-card-header {
   display: flex;
   align-items: flex-start;
@@ -679,7 +668,7 @@ body {
   transform: translateX(-3px);
 }
 
-/* Modal Body */
+/* Corpo do modal */
 .modal-card-body {
   padding: var(--space-36) var(--space-48) var(--space-40);
   overflow-y: auto;
@@ -698,9 +687,7 @@ body {
   flex-shrink: 0;
 }
 
-/* ==========================================================================
-   MODAL 1: SOBRE A MARCA (PRECISE 2-COLUMN GRID WITH BREATHING ROOM)
-   ========================================================================== */
+/* Sobre nós */
 .about-grid-layout {
   display: grid;
   grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
@@ -866,9 +853,7 @@ body {
   width: 100%;
 }
 
-/* ==========================================================================
-   BUTTONS SYSTEM (ELEGANT PROPORTIONS & SPACIOUS PADDINGS)
-   ========================================================================== */
+/* Botões */
 .primary-action-btn,
 .secondary-action-btn {
   display: inline-flex;
@@ -938,9 +923,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   MODAL 2: SERVICES MAIN POP-UP (CLEAN BALANCED 2-COLUMN WITH GENEROUS BREATHING)
-   ========================================================================== */
+/* Serviços */
 .services-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1076,9 +1059,7 @@ body {
   border-color: var(--color-accent-gold);
 }
 
-/* ==========================================================================
-   MODAL 3: NESTED SERVICE DETAIL (SUB-POP-UP)
-   ========================================================================== */
+/* Detalhe de serviço */
 .detail-template {
   display: flex;
   flex-direction: column;
@@ -1210,9 +1191,7 @@ body {
   color: var(--color-text-muted);
 }
 
-/* ==========================================================================
-   MODAL 4: DOCUMENTÁRIO ECOLÓGICO COM IA (EDITORIAL & LUXURY CINEMATIC)
-   ========================================================================== */
+/* Vídeo */
 .documentary-layout {
   display: flex;
   flex-direction: column;
@@ -1420,9 +1399,7 @@ body {
   margin-top: auto;
 }
 
-/* ==========================================================================
-   MODAL 5: REPERTÓRIO FOTOGRÁFICO (HARMONIOUS GRID WITHOUT GAPS)
-   ========================================================================== */
+/* Galeria de fotos */
 .gallery-filters-bar {
   display: flex;
   gap: 10px;
@@ -1525,7 +1502,7 @@ body {
   color: var(--color-accent-gold);
 }
 
-/* Lightbox Modal */
+/* Lightbox */
 .lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -1593,9 +1570,7 @@ body {
   text-align: center;
 }
 
-/* ==========================================================================
-   MODAL 6: CONTACTOS & FORMULÁRIO (ROBUST 2-COLUMN GRID WITH LUXURY SPACING)
-   ========================================================================== */
+/* Contactos e formulário */
 .contact-grid-layout {
   display: grid;
   grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
@@ -1719,7 +1694,7 @@ body {
   gap: 6px;
 }
 
-/* Booking Form Column */
+/* Formulário */
 .contact-form-column {
   width: 100%;
 }
@@ -1807,11 +1782,9 @@ body {
   flex-shrink: 0;
 }
 
-/* ==========================================================================
-   METICULOUS RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+/* Responsividade */
 
-/* Tablets (< 1024px) */
+/* Tablet */
 @media (max-width: 1024px) {
   .hero-container {
     padding: var(--space-20) var(--space-32);
@@ -1854,7 +1827,7 @@ body {
   }
 }
 
-/* Small Tablets & Large Mobile (< 768px) */
+/* Tablet pequeno e mobile */
 @media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
@@ -1886,7 +1859,7 @@ body {
   }
 }
 
-/* Mobile Phones (< 600px) */
+/* Mobile */
 @media (max-width: 600px) {
   .hero-container {
     padding: var(--space-18) var(--space-16) var(--space-28);
@@ -1959,7 +1932,7 @@ body {
     padding-top: var(--space-8);
   }
 
-  /* Full bleed experience on Mobile */
+  /* Modais em ecrã inteiro no mobile */
   .custom-modal-backdrop {
     padding: var(--space-8);
   }
@@ -2024,7 +1997,7 @@ body {
   }
 
   .form-input, .form-select, .form-textarea {
-    font-size: 16px; /* Prevents auto zoom in iOS Safari */
+    font-size: 16px; /* Evita zoom automático no iOS */
     padding: 12px 14px;
   }
 
@@ -2035,11 +2008,9 @@ body {
   }
 }
 
-/* ==========================================================================
-   NOVA ESTRUTURA: MISSÕES (SOBRE NÓS), BIODIVERSIDADE, SERVIÇOS & MOSAICO
-   ========================================================================== */
+/* Secções editoriais */
 
-/* --- SOBRE NÓS: MISSION SECTIONS & CALLOUTS --- */
+/* Missões e destaques */
 .mission-section-card {
   background: var(--color-bg-surface);
   border: 1px solid var(--color-glass-border);
@@ -2169,7 +2140,7 @@ body {
 }
 
 
-/* --- O QUE É UM JARDIM DE BIODIVERSIDADE --- */
+/* Jardim de Biodiversidade */
 .biodiversity-grid-layout {
   display: grid;
   grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
@@ -2309,7 +2280,7 @@ body {
 }
 
 
-/* --- OS NOSSOS SERVIÇOS (2 CARDS CONFORME IMAGEM 4) --- */
+/* Cartões de serviços */
 .services-duo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2402,7 +2373,7 @@ body {
   transition: var(--transition-fast);
 }
 
-/* Botão destacado "Os nossos jardins" (tom terracota/salmão elegante como no mockup) */
+/* Botão Os nossos jardins */
 .btn-service-highlight {
   background: #b57a70;
   color: #ffffff;
@@ -2416,7 +2387,7 @@ body {
   box-shadow: 0 6px 18px rgba(181, 122, 112, 0.45);
 }
 
-/* Botão "Reuniões e Actividades na Natureza" (tom verde oliva/musgo como no mockup) */
+/* Botão Reuniões e Actividades na Natureza */
 .btn-service-standard {
   background: #7a8e63;
   color: #ffffff;
@@ -2431,7 +2402,7 @@ body {
 }
 
 
-/* --- SUB-POPUP: OS NOSSOS JARDINS & MOSAICO FOTOGRÁFICO (CONFORME IMAGEM 5) --- */
+/* Mosaico de jardins */
 .gardens-detail-layout {
   display: grid;
   grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
@@ -2546,7 +2517,7 @@ body {
   margin-top: var(--space-12);
 }
 
-/* Responsividade adicional para os novos layouts */
+/* Ajustes responsivos */
 @media (max-width: 992px) {
   .biodiversity-grid-layout,
   .gardens-detail-layout {
@@ -2615,9 +2586,7 @@ body {
   }
 }
 
-/* ==========================================================================
-   POPUP CONTACTOS RÁPIDOS (ESTILO OFICIAL CONFORME IMAGEM DO USUÁRIO)
-   ========================================================================== */
+/* Cartão de contactos rápidos */
 .contact-modal-wrapper {
   display: flex;
   flex-direction: column;
@@ -2797,9 +2766,7 @@ body {
 
 
 
-/* ==========================================================================
-   GALLERY MODAL & SUB-MODALS (VÍDEO E FOTOS)
-   ========================================================================== */
+/* Galeria (vídeo e fotos) */
 .gallery-choice-card {
   cursor: pointer;
   position: relative;
@@ -2837,7 +2804,7 @@ body {
   border-color: var(--color-accent-gold);
 }
 
-/* Video Sub-Modal Styles */
+/* Submodal de vídeo */
 .gallery-video-layout {
   display: flex;
   flex-direction: column;
@@ -2856,7 +2823,7 @@ body {
 .video-player-aspect-frame {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; /* Proporção 16:9 */
 }
 
 .video-iframe {
@@ -2973,7 +2940,7 @@ body {
   line-height: 1.45;
 }
 
-/* Photos Sub-Modal Styles */
+/* Submodal de fotos */
 .gallery-photos-layout {
   display: flex;
   flex-direction: column;
@@ -3094,7 +3061,7 @@ body {
   line-height: 1.35;
 }
 
-/* Lightbox Viewer */
+/* Visualizador de fotos */
 .gallery-lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -3353,7 +3320,7 @@ body {
   line-height: 1.45;
 }
 
-/* Badge Brevemente sobre a foto do serviço */
+/* Etiqueta Brevemente */
 .service-coming-soon-badge {
   position: absolute;
   top: 50%;

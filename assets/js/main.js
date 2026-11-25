@@ -1,20 +1,15 @@
-/**
- * BIOBLOOM | JARDINS DE BIODIVERSIDADE & RESTAURO ECOLÓGICO
- * Interactive Engine & Cascading Modal System
- */
+/* BioBloom - Scripts principais */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // =========================================================================
-  // 1. BACKGROUND CAROUSEL SLIDESHOW ENGINE (AUTONOMOUS CROSSFADE)
-  // =========================================================================
+  // Carrossel de fundo
   const slides = document.querySelectorAll('.bg-slide');
   let currentSlideIndex = 0;
   const totalSlides = slides.length;
-  const slideDuration = 4500; // 4.5 seconds per slide
+  const slideDuration = 4500;
   let slideTimer = null;
 
-  // Preload all slideshow images in background for instant switching
+  // Pré-carregamento das imagens de fundo
   [
     'assets/img/_DSC0827.webp',
     'assets/img/_DSC0915.webp',
@@ -45,9 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // =========================================================================
-  // 2. MODAL & CASCADING POP-UP MANAGEMENT
-  // =========================================================================
+  // Gestão de modais
   const allModals = document.querySelectorAll('.custom-modal-backdrop');
   const modalOpenButtons = document.querySelectorAll('[data-open-modal]');
   const modalCloseButtons = document.querySelectorAll('[data-close-modal]');
@@ -61,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnBackToServicesFromGardens = document.getElementById('btnBackToServicesFromGardens');
   const btnBackToServicesFromMeetings = document.getElementById('btnBackToServicesFromMeetings');
 
-  // Open Main Modal
+  // Abrir modal
   function openModal(modalId) {
     const targetModal = document.getElementById(modalId);
     if (targetModal) {
@@ -71,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Close Specific Modal
+  // Fechar modal
   function closeModal(modalElement) {
     if (modalElement) {
       modalElement.classList.remove('is-open');
@@ -84,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Close All Modals
+  // Fechar todos os modais
   function closeAllModals() {
     allModals.forEach(m => closeModal(m));
   }
 
-  // Switch Modal smoothly (e.g. from Sobre nós to Contactos rápidos)
+  // Alternar entre modais
   function switchModal(fromModal, toModalId) {
     if (fromModal) closeModal(fromModal);
     setTimeout(() => {
@@ -97,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200);
   }
 
-  // Open Sub-modal in cascade (keeps or switches from servicesModal)
+  // Abrir submodal
   function openSubModal(subModalId) {
     const targetSubModal = document.getElementById(subModalId);
     if (targetSubModal) {
@@ -107,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Close Sub-modal and return smoothly to Services Modal
+  // Voltar ao modal de serviços
   function returnToServicesModal(currentSubModal) {
     if (currentSubModal) {
       closeModal(currentSubModal);
@@ -117,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Hook Menu Buttons
+  // Botões do menu
   modalOpenButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const targetId = btn.getAttribute('data-open-modal');
@@ -125,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Hook Close Buttons
+  // Botões de fechar
   modalCloseButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       const modal = e.target.closest('.custom-modal-backdrop');
@@ -133,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Hook Sub-modal Open Buttons (Inside Services Modal)
+  // Botões de submodais
   submodalOpenButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -142,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Hook Sub-modal Back Buttons (Returns to Services)
+  // Botões de voltar aos serviços
   if (btnBackToServicesFromGardens) {
     btnBackToServicesFromGardens.addEventListener('click', () => {
       returnToServicesModal(ourGardensModal);
@@ -154,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Hook Nested Close Buttons (X button inside sub-modals)
+  // Botões de fechar nos submodais
   nestedCloseButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       const subModal = e.target.closest('.custom-modal-backdrop');
@@ -162,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Hook Generic Sub-modal Back Buttons (data-back-to-modal)
+  // Botões de voltar genéricos
   document.querySelectorAll('[data-back-to-modal]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -177,9 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // =========================================================================
-  // GALLERY PHOTO FILTERING & LIGHTBOX ENGINE
-  // =========================================================================
+  // Filtros da galeria e lightbox
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
   const photoCards = document.querySelectorAll('.photo-item-card');
   const lightbox = document.getElementById('galleryLightbox');
@@ -191,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentPhotoList = [];
   let currentPhotoIndex = 0;
 
-  // Filter Buttons
+  // Filtros
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
@@ -209,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Lightbox functions
+  // Lightbox
   function updateLightboxList() {
     currentPhotoList = Array.from(photoCards).filter(c => c.style.display !== 'none');
   }
@@ -254,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Escape key handler for lightbox and modals
+  // Navegação por teclado no lightbox
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (lightbox && lightbox.classList.contains('is-open')) {
@@ -267,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Hook Switch Buttons (Inline links between modals)
+  // Links internos entre modais
   modalSwitchButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       const currentModal = e.target.closest('.custom-modal-backdrop');
@@ -276,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Backdrop click to close
+  // Fechar ao clicar fora
   allModals.forEach(modal => {
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
@@ -289,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ESC Key Navigation
+  // Fechar com tecla Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       const openNested = document.querySelector('.custom-modal-backdrop.nested-level-2.is-open');
@@ -302,9 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // =========================================================================
-  // 3. ACTION BUTTONS: PRE-SELECT SERVICE IN CONTACT FORM
-  // =========================================================================
+  // Pré-seleção de serviço no formulário de contacto
   const btnRequestGardensQuote = document.getElementById('btnRequestGardensQuote');
   const btnRequestMeetingsQuote = document.getElementById('btnRequestMeetingsQuote');
   const serviceInterestSelect = document.getElementById('serviceInterest');
@@ -344,9 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // =========================================================================
-  // 4. CONTACT FORM SUBMISSION HANDLER
-  // =========================================================================
+  // Envio do formulário de contacto
   window.handleContactSubmit = function() {
     const submitBtn = document.getElementById('submitFormBtn');
     const successMsg = document.getElementById('formSuccessMessage');
@@ -367,9 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 
-  // =========================================================================
-  // 5. YOUTUBE PLAYER: DISABLE AUTOMATIC CAPTIONS BY DEFAULT
-  // =========================================================================
+  // Player do YouTube (desativa legendas automáticas)
   const ytIframe = document.getElementById('biobloomYoutubePlayer');
   if (ytIframe) {
     const tag = document.createElement('script');
